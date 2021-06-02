@@ -1,42 +1,49 @@
 {
-  "name": "nodecg-soccer",
-  "version": "0.0.0",
-  "description": "nodecg-soccer for loi",
-  "homepage": "conorreeves.github.io/loi",
-  "author": {
-    "name": "Conor Reeves",
-    "email": "conor@vitel.tv",
-    "url": "conorreeves.github.io"
+  "name":"nodecg-soccer",
+  "version":"0.0.0",
+  "description":"nodecg-soccer for loi",
+  "homepage":"conorreeves.github.io/loi",
+  "author":{
+     "name":"Conor Reeves",
+     "email":"conor@vitel.tv",
+     "url":"conorreeves.github.io"
   },
-  "files": [
-    "dashboard",
-    "graphics",
-    "extension.js",
-    "extension"
+  "files":[
+     "dashboard",
+     "graphics",
+     "extension.js",
+     "extension"
   ],
-  "keywords": [
-    "",
-    "nodecg-bundle"
+  "keywords":[
+     "",
+     "nodecg-bundle"
   ],
-  "nodecg": {
-    "compatibleRange": "^1.1.1",
-    "dashboardPanels": [
-      {
-        "name": "panel",
-        "title": "Panel",
-        "width": 2,
-        "file": "panel.html",
-        "headerColor": "#525F78"
-      }
-    ],
-    "graphics": [
-      {
-        "file": "index.html",
-        "width": 1920,
-        "height": 1080
-      }
-    ]
+  "nodecg":{
+     "compatibleRange":"^1.1.1",
+     "dashboardPanels":[
+        {
+           "name":"livescorepanel",
+           "title":"LiveScore Panel",
+           "width":2,
+           "file":"livescore.html",
+           "headerColor":"#525F78"
+        },
+        {
+          "name":"teamnamespanel",
+          "title":"Team Names Panel",
+          "width":2,
+          "file":"teamnames.html",
+          "headerColor":"#525F78"
+       }
+     ],
+     "graphics":[
+        {
+           "file":"index.html",
+           "width":1920,
+           "height":1080
+        }
+     ]
   },
-  "repository": "https://github.com/ConorReeves/nodecg-soccer.git",
-  "license": ""
+  "repository":"https://github.com/ConorReeves/nodecg-soccer.git",
+  "license":""
 }

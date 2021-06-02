@@ -1,10 +1,10 @@
 (function(){
-    "use strict";
+    'use strict';
     $.Toast = function(title, message, type, options){
         var defaultOptions = {
-            appendTo: "body",
+            appendTo: 'body',
             stack: false,
-            position_class: "toast-bottom-right",
+            position_class: 'toast-bottom-right',
             fullscreen:false,
             width: 250,
             spacing:20,
@@ -24,45 +24,45 @@
         var spacing = $options.spacing;
 
         var css = {
-            "position":($options.appendTo == "body") ? "fixed" : "absolute",
-            "min-width":$options.width,
-            "display":"none",
-            "border-radius":$options.border_radius,
-            "z-index":99999
+            'position':($options.appendTo == 'body') ? 'fixed' : 'absolute',
+            'min-width':$options.width,
+            'display':'none',
+            'border-radius':$options.border_radius,
+            'z-index':99999
         }
 
-        $element = $('<div class="toast-item-wrapper ' + type + ' ' + $options.position_class + '"></div>');
-        $('<p class="toast-title">' + title + '</p>').appendTo($element);
-        $('<p class="toast-message">' + message + '</p>').appendTo($element);
+        $element = $('<div class='toast-item-wrapper ' + type + ' ' + $options.position_class + ''></div>');
+        $('<p class='toast-title'>' + title + '</p>').appendTo($element);
+        $('<p class='toast-message'>' + message + '</p>').appendTo($element);
 
         if($options.fullscreen){
-            $element.addClass( "fullscreen" );
+            $element.addClass( 'fullscreen' );
         }
 
         if($options.rtl){
-            $element.addClass( "rtl" );
+            $element.addClass( 'rtl' );
         }
 
         if($options.has_close_btn){
-            $('<span class="toast-close">&times;</span>').appendTo($element);
+            $('<span class='toast-close'>&times;</span>').appendTo($element);
             if( $options.rtl){
-                css["padding-left"] = 20;
+                css['padding-left'] = 20;
             } else {
-                css["padding-right"] = 20;
+                css['padding-right'] = 20;
             }
         }
 
         if($options.has_icon){
-            $('<i class="toast-icon toast-icon-' + type + '"></i>').appendTo($element);
+            $('<i class='toast-icon toast-icon-' + type + ''></i>').appendTo($element);
             if( $options.rtl){
-                css["padding-right"] = 50;
+                css['padding-right'] = 50;
             } else {
-                css["padding-left"] = 50;
+                css['padding-left'] = 50;
             }            
         }
 
         if($options.has_progress && $options.timeout > 0){
-            $('<div class="toast-progress"></div>').appendTo($element);
+            $('<div class='toast-progress'></div>').appendTo($element);
         }
 
         if($options.sticky){
@@ -70,36 +70,36 @@
             spacing = 0;
 
             switch($options.position_class){
-                case "toast-top-left" : {
-                    css["top"] = 0;
-                    css["left"] = 0;
+                case 'toast-top-left' : {
+                    css['top'] = 0;
+                    css['left'] = 0;
                     break;
                 }
-                case "toast-top-right" : {
-                    css["top"] = 0;
-                    css["left"] = 0;                    
+                case 'toast-top-right' : {
+                    css['top'] = 0;
+                    css['left'] = 0;                    
                     break;
                 }
-                case "toast-top-center" : {
-                    css["top"] = 0;
-                    css["left"] = css["right"] = 0;  
-                    css["width"] = "100%";                  
+                case 'toast-top-center' : {
+                    css['top'] = 0;
+                    css['left'] = css['right'] = 0;  
+                    css['width'] = '100%';                  
                     break;
                 }
-                case "toast-bottom-left" : {
-                    css["bottom"] = 0;
-                    css["left"] = 0;                     
+                case 'toast-bottom-left' : {
+                    css['bottom'] = 0;
+                    css['left'] = 0;                     
                     break;
                 }
-                case "toast-bottom-right" : {
-                    css["bottom"] = 0;
-                    css["right"] = 0;                     
+                case 'toast-bottom-right' : {
+                    css['bottom'] = 0;
+                    css['right'] = 0;                     
                     break;
                 }
-                case "toast-bottom-center" : {
-                    css["bottom"] = 0;
-                    css["left"] = css["right"] = 0;  
-                    css["width"] = "100%";                     
+                case 'toast-bottom-center' : {
+                    css['bottom'] = 0;
+                    css['left'] = css['right'] = 0;  
+                    css['width'] = '100%';                     
                     break;
                 }
                 default : {
@@ -109,13 +109,13 @@
         }
 
         if($options.stack){
-            if($options.position_class.indexOf("toast-top") !== -1 ){
+            if($options.position_class.indexOf('toast-top') !== -1 ){
                 $($options.appendTo).find('.toast-item-wrapper').each(function(){
-                    css["top"] = parseInt($(this).css("top")) + this.offsetHeight + spacing;
+                    css['top'] = parseInt($(this).css('top')) + this.offsetHeight + spacing;
                 });
-            } else if($options.position_class.indexOf("toast-bottom") !== -1 ){
+            } else if($options.position_class.indexOf('toast-bottom') !== -1 ){
                 $($options.appendTo).find('.toast-item-wrapper').each(function(){
-                    css["bottom"] = parseInt($(this).css("bottom")) + this.offsetHeight + spacing;
+                    css['bottom'] = parseInt($(this).css('bottom')) + this.offsetHeight + spacing;
                 });
             }
         }        
@@ -137,17 +137,17 @@
 		if($options.timeout > 0){
 			setTimeout(removeToast, $options.timeout);
             if($options.has_progress){
-                $(".toast-progress", $element).animate({"width":"100%"}, $options.timeout);
+                $('.toast-progress', $element).animate({'width':'100%'}, $options.timeout);
             }
 		}        
 
-        $(".toast-close", $element).click(removeToast)
+        $('.toast-close', $element).click(removeToast)
 
         return $element;
     }
 
     $.Toast.remove = function( $element ){
-        "use strict";        
+        'use strict';        
 		if($element.fadeOut)
 		{
 			$element.fadeOut(function(){

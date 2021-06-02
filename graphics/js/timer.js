@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 let minute = 0;
 let second = 0;
@@ -7,7 +7,7 @@ let millisecond = 0;
 let cron;
 
 function start() {
-    nodecg.log.info("Timer Started")
+    nodecg.log.info('Timer Started')
     pause();
     cron = setInterval(() => {
         timer();
@@ -23,7 +23,7 @@ function reset() {
     second = 0;
     document.getElementById('minute').innerText = '00';
     document.getElementById('second').innerText = '00';
-    nodecg.log.info("Timer Reset")
+    nodecg.log.info('Timer Reset')
 }
 
 function timer() {
@@ -45,5 +45,5 @@ function returnData(input) {
 
 function pauseandlog() {
     clearInterval(cron);
-    nodecg.log.info("Timer Paused")
+    nodecg.log.info('Timer Paused')
 }
