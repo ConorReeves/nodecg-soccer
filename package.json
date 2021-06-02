@@ -1,12 +1,12 @@
 {
-  "name": "my-first-bundle",
+  "name": "nodecg-soccer",
   "version": "0.0.0",
-  "description": "first bundle",
+  "description": "nodecg-soccer for loi",
   "homepage": "conorreeves.github.io/loi",
   "author": {
     "name": "Conor Reeves",
     "email": "conor@vitel.tv",
-    "url": "conorreevs.github.io"
+    "url": "conorreeves.github.io"
   },
   "files": [
     "dashboard",
@@ -37,6 +37,6 @@
       }
     ]
   },
-  "repository": "https://github.com/nodecg/nodecg.git",
-  "license": "Apache-2.0"
+  "repository": "https://github.com/ConorReeves/nodecg-soccer.git",
+  "license": ""
 }
