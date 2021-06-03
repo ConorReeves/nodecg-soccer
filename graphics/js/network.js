@@ -18,4 +18,10 @@ nodecg.listenFor('pauseMessage', () => {
     nodecg.sendMessage('pauseReceived');
 });
 
-// LINEUP
+// OVERTIME
+
+nodecg.listenFor('overtimeBoxToggleMessage', () => {
+	nodecg.log.info('OvertimeBox Message received!');
+	hideOvertime();
+	nodecg.sendMessage('overtimeBoxToggleReceived');
+});

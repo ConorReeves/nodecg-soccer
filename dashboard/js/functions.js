@@ -29,3 +29,4 @@ nodecg.listenFor('pauseReceived', () => {
 nodecg.listenFor('resetReceived', () => {
     nodecg.log.info('Reset Acknowledgement received!');
 });
+

@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background: hsla() !important; 
+    background: hsla() !important;
 }
 
 .monospace {
@@ -21,8 +21,12 @@ body {
     border-radius:5px;
     top: 60px;
     left: 106px;
+	display: flex;
+	flex-direction: column;
+	font-weight:bold;
+	font-size:xx-large;
   }
-  
+
   #livescorebox {
     padding: 5px;
     cursor: move;
@@ -32,3 +36,14 @@ body {
     border-radius: 5px;
     opacity: 100%;
   }
+
+  #overtimebox {
+	  display: flex;
+	  flex-direction: column;
+	  flex: 0 0 1em;
+	  color: white;
+	  padding: 5px;
+	  cursor: move;
+	  background: linear-gradient(to bottom, black 0%, grey 50%, black 100%);
+  }
+

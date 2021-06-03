@@ -5,10 +5,21 @@
     <link rel='stylesheet' href='css/styles.css'>
 	<script type="text/javascript" src='js/jquery-3.6.0.js'></script>
 	<script type="text/javascript" src='js/functions.js'></script>
+	<script defer type="text/javascript" src="js/overtimepanel.js"></script>
 </head>
 <body>
 	<button type='button' id='start' onclick='startTimer()'>start</button>
 	<button type='button' id='pause' onclick='pauseTimer();'>pause</button>
 	<button type='button' id='reset' onclick='resetTimer();'>reset</button>
+	<br />
+	<br />
+	<br />
+	<input type="text" placeholder="03:00" id="overtimeSet">
+	<br />
+	<br />
+	<br />
+	<input type="checkbox" id="toggleOvertimeCheckbox" class="toggleOvertimeCheckbox" name="toggleOvertime" value="toggleOvertime">
+	<label for="toggleOvertimeCheckbox">Toggle Overtime</label><br>
+
 </body>
 </html>
