@@ -29,10 +29,10 @@
            "headerColor":"#525F78"
         },
         {
-          "name":"teamnamespanel",
-          "title":"Team Names Panel",
+          "name":"lineuppanel",
+          "title":"Line Up Panel",
           "width":2,
-          "file":"teamnames.html",
+          "file":"lineup.html",
           "headerColor":"#525F78"
        }
      ],

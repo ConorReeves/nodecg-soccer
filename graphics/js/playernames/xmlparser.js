@@ -1,3 +1,5 @@
+let txt = ""
+
 if (window.DOMParser)
 {
     parser = new DOMParser();
@@ -9,3 +11,4 @@ else // Internet Explorer
     xmlDoc.async = false;
     xmlDoc.loadXML(txt);
 }
+

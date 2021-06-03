@@ -1,9 +1,3 @@
-// Date & Time Vars
-var today = new Date();
-var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
-var time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
-var dateTime = time + ' ' + date;
-
 // Sending Messages
 
 function startTimer() {
@@ -26,13 +20,12 @@ function pauseTimer() {
 
 // Receiving Messages
 
-nodecg.listenFor('resetReceived', () => {
-    resetReceivedFunction()
+nodecg.listenFor('startReceived', () => {
+    nodecg.log.info('Start Acknowledgement received!');
 });
-
-function resetReceivedFunction() {
-    if (resetReceived) {
-        nodecg.log.info('Reset Acknowledgement received @' + ' ' + dateTime);
-        $.Toast('Acknowledgement:','RESET ACKNOWLEDGED','success');
-    }
-}
+nodecg.listenFor('pauseReceived', () => {
+    nodecg.log.info('Pause Acknowledgement received!');
+});
+nodecg.listenFor('resetReceived', () => {
+    nodecg.log.info('Reset Acknowledgement received!');
+});

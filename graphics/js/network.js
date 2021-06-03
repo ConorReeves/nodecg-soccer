@@ -1,25 +1,21 @@
-// Date & Time Stuff
-var today = new Date();
-var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
-var time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
-var dateTime = time + ' ' + date;
-
-
+// LIVESCORE
 
 nodecg.listenFor('startMessage', () => {
+    nodecg.log.info('Start Message received!');
     start();
-    nodecg.log.info('Start Message received @' + ' ' + dateTime);
     nodecg.sendMessage('startReceived');
 });
 
 nodecg.listenFor('resetMessage', () => {
+    nodecg.log.info('Reset Message received!');
     reset();
-    nodecg.log.info('Reset Message received @' + ' ' + dateTime);
     nodecg.sendMessage('resetReceived');
 });
 
 nodecg.listenFor('pauseMessage', () => {
+    nodecg.log.info('Pause Message received!');
     pauseandlog();
-    nodecg.log.info('Pause Message received @' + ' ' + dateTime);
     nodecg.sendMessage('pauseReceived');
 });
+
+// LINEUP
