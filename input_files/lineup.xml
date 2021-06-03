@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MatchInfo>
+   <Stadium>
+      <Name>Tallaght Stadium</Name>
+      <Location>Dublin</Location>
+   </Stadium>
+   <Kickoff>
+      <Day>Friday</Day>
+      <Date>11</Date>
+      <Month>June</Month>
+      <Time>20:00</Time>
+   </Kickoff>
+   <Teams>
+      <Team1>
+         <TeamName>Shamrock Rovers</TeamName>
+         <isHome>true</isHome>
+         <Manager>
+            <Name>Martín Ó'Ceallaigh</Name>
+         </Manager>
+         <Players>
+            <Starting11>
+               <Player1>
+                  <Name>Alan Riordan</Name>
+                  <Number>02</Number>
+                  <Position>ST</Position>
+                  <isCaptain>true</isCaptain>
+               </Player1>
+               <Player2>
+                  <Name>Nolan Rearden</Name>
+                  <Number>13</Number>
+                  <Position>ST</Position>
+                  <isCaptain>false</isCaptain>
+               </Player2>
+               <Player3>
+                  <Name>Darragh O'Shaughnessy</Name>
+                  <Number>07</Number>
+                  <Position>FW</Position>
+                  <isCaptain>false</isCaptain>
+               </Player3>
+               <Player4>
+                  <Name>Brenden O'Carroll</Name>
+                  <Number>03</Number>
+                  <Position>FW</Position>
+                  <isCaptain>false</isCaptain>
+               </Player4>
+               <Player5>
+                  <Name>Tiarnán Somhairle</Name>
+                  <Number>17</Number>
+                  <Position>MD</Position>
+                  <isCaptain>false</isCaptain>
+               </Player5>
+               <Player6>
+                  <Name>Neville O'Sullivan</Name>
+                  <Number>15</Number>
+                  <Position>MD</Position>
+                  <isCaptain>false</isCaptain>
+               </Player6>
+               <Player7>
+                  <Name>Pól Murphy</Name>
+                  <Number>21</Number>
+                  <Position>MD</Position>
+                  <isCaptain>false</isCaptain>
+               </Player7>
+               <Player8>
+                  <Name>Fergal Kelly</Name>
+                  <Number>14</Number>
+                  <Position>DF</Position>
+                  <isCaptain>false</isCaptain>
+               </Player8>
+               <Player9>
+                  <Name>Aengus Marcas</Name>
+                  <Number>16</Number>
+                  <Position>DF</Position>
+                  <isCaptain>false</isCaptain>
+               </Player9>
+               <Player10>
+                  <Name>Proinsias Finlay</Name>
+                  <Number>19</Number>
+                  <Position>DF</Position>
+                  <isCaptain>false</isCaptain>
+               </Player10>
+               <Player11>
+                  <Name>Niall O'Grady</Name>
+                  <Number />
+                  <Position>GK</Position>
+                  <isCaptain>false</isCaptain>
+               </Player11>
+            </Starting11>
+            <Subs>
+               <Sub1>
+                  <Name>Andrew Laughlin</Name>
+                  <Number>20</Number>
+                  <Position>ST</Position>
+               </Sub1>
+               <Sub2>
+                  <Name>Nathan Coughlan</Name>
+                  <Number>12</Number>
+                  <Position>MD</Position>
+               </Sub2>
+               <Sub3>
+                  <Name />
+                  <Number>18</Number>
+                  <Position>DF</Position>
+               </Sub3>
+               <Sub4>
+                  <Name />
+                  <Number>23</Number>
+                  <Position>GK</Position>
+               </Sub4>
+            </Subs>
+         </Players>
+      </Team1>
+      <Team2>
+         <TeamName>Finn Harps</TeamName>
+         <isHome>false</isHome>
+         <Manager>
+            <Name>Shane Anderson</Name>
+         </Manager>
+         <Players>
+            <Starting11>
+               <Player1>
+                  <Name>Alan Riordan</Name>
+                  <Number>02</Number>
+                  <Position>ST</Position>
+                  <isCaptain>false</isCaptain>
+               </Player1>
+               <Player2>
+                  <Name>Nolan Rearden</Name>
+                  <Number>13</Number>
+                  <Position>ST</Position>
+                  <isCaptain>true</isCaptain>
+               </Player2>
+               <Player3>
+                  <Name>Darragh O'Shaughnessy</Name>
+                  <Number>07</Number>
+                  <Position>FW</Position>
+                  <isCaptain>false</isCaptain>
+               </Player3>
+               <Player4>
+                  <Name>Brenden O'Carroll</Name>
+                  <Number>03</Number>
+                  <Position>FW</Position>
+                  <isCaptain>false</isCaptain>
+               </Player4>
+               <Player5>
+                  <Name>Tiarnán Somhairle</Name>
+                  <Number>17</Number>
+                  <Position>MD</Position>
+                  <isCaptain>false</isCaptain>
+               </Player5>
+               <Player6>
+                  <Name>Neville O'Sullivan</Name>
+                  <Number>15</Number>
+                  <Position>MD</Position>
+                  <isCaptain>false</isCaptain>
+               </Player6>
+               <Player7>
+                  <Name>Pól Murphy</Name>
+                  <Number>21</Number>
+                  <Position>MD</Position>
+                  <isCaptain>false</isCaptain>
+               </Player7>
+               <Player8>
+                  <Name>Fergal Kelly</Name>
+                  <Number>14</Number>
+                  <Position>DF</Position>
+                  <isCaptain>false</isCaptain>
+               </Player8>
+               <Player9>
+                  <Name>Aengus Marcas</Name>
+                  <Number>16</Number>
+                  <Position>DF</Position>
+                  <isCaptain>false</isCaptain>
+               </Player9>
+               <Player10>
+                  <Name>Proinsias Finlay</Name>
+                  <Number>19</Number>
+                  <Position>DF</Position>
+                  <isCaptain>false</isCaptain>
+               </Player10>
+               <Player11>
+                  <Name>Niall O'Grady</Name>
+                  <Number />
+                  <Position>GK</Position>
+                  <isCaptain>false</isCaptain>
+               </Player11>
+            </Starting11>
+            <Subs>
+               <Sub1>
+                  <Name>Andrew Laughlin</Name>
+                  <Number>20</Number>
+                  <Position>ST</Position>
+               </Sub1>
+               <Sub2>
+                  <Name>Nathan Coughlan</Name>
+                  <Number>12</Number>
+                  <Position>MD</Position>
+               </Sub2>
+               <Sub3>
+                  <Name />
+                  <Number>18</Number>
+                  <Position>DF</Position>
+               </Sub3>
+               <Sub4>
+                  <Name />
+                  <Number>23</Number>
+                  <Position>GK</Position>
+               </Sub4>
+            </Subs>
+         </Players>
+      </Team2>
+   </Teams>
+</MatchInfo>
