@@ -6,3 +6,7 @@ function hideOvertime() {
 		box.style.display = "none";
 	}
 }
+
+nodecg.listenFor('overtimeBoxValue', (data) => {
+	nodecg.log.info(data);
+});

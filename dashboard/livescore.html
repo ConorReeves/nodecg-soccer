@@ -15,7 +15,10 @@
 	<br />
 	<br />
 	<input type="text" placeholder="03:00" id="overtimeSet">
+	<nodecg-replicant replicant-name="my-replicant" value="{{myReplicantValue}}"></nodecg-replicant>
 	<br />
+	<br />
+	<button type="button" id="setOvertime" onclick="sendOvertimeValue()">-Set-</button>
 	<br />
 	<br />
 	<input type="checkbox" id="toggleOvertimeCheckbox" class="toggleOvertimeCheckbox" name="toggleOvertime" value="toggleOvertime">
