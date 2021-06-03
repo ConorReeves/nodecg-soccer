@@ -8,5 +8,7 @@ function hideOvertime() {
 }
 
 nodecg.listenFor('overtimeBoxValue', (data) => {
-	nodecg.log.info(data);
+	nodecg.log.info("Overtime Received = "+data);
+	//document.body.innerHTML = document.body.innerHTML.replace('hello', 'hi');
+	alert(document.querySelector("#overtimebox").value)
 });

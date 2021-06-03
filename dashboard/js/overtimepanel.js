@@ -1,5 +1,3 @@
-const inputVal = document.getElementById("overtimeSet").value;
-
 function toggleOvertimeBox() {
 	nodecg.sendMessage('overtimeBoxToggleMessage');
 	nodecg.log.info('OvertimeBox Message sent!');
@@ -10,7 +8,10 @@ nodecg.listenFor('overtimeBoxToggleReceived', () => {
 });
 
 function sendOvertimeValue() {
-	nodecg.sendMessage('overtimeBoxValue', inputVal);
+	const inputValue = document.querySelector("#overtimeSetBox");
+	let realInput = inputValue.value;
+	alert("Overtime sent = "+realInput);
+	nodecg.sendMessage('overtimeBoxValue', realInput);
 }
 
 $(".toggleOvertimeCheckbox").change(function() {
