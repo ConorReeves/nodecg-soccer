@@ -10,7 +10,6 @@ nodecg.listenFor('overtimeBoxToggleReceived', () => {
 function sendOvertimeValue() {
 	const inputValue = document.querySelector("#overtimeSetBox");
 	let realInput = inputValue.value;
-	alert("Overtime sent = "+realInput);
 	nodecg.sendMessage('overtimeBoxValue', realInput);
 }
 
