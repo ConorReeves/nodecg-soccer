@@ -1,5 +1,16 @@
-'use strict';
+// Set Timer Val from Panel
 
+nodecg.listenFor('timeBoxValue', (data) => {
+	nodecg.log.info("Time Received = "+data);
+	const timeData = data;
+	const timeMinuteChars = timeData.substring(0,2);
+	const timeSecondChars = timeData.substring(3,5);
+	document.getElementById('minute').innerText = timeMinuteChars;
+	document.getElementById('second').innerText = timeSecondChars;
+});
+
+'use strict';
+// Timer fncs
 let minute = 0;
 let second = 0;
 let millisecond = 0;

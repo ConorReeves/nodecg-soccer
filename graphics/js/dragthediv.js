@@ -1,5 +1,5 @@
 // Make the DIV element draggable:
-dragElement(document.getElementById('livescorediv'));
+dragElement(document.getElementById('scorebugbox'));
 
 function dragElement(elmnt) {
     var pos1 = 0,

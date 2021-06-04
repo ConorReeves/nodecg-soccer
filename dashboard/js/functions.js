@@ -18,6 +18,11 @@ function pauseTimer() {
     pauseReceived = false;
 }
 
+function sendHideScoreBoard() {
+	nodecg.sendMessage('hideScoreBug');
+	nodecg.log.info('Hide Scoreboard Message sent!');
+}
+
 // Receiving Messages
 
 nodecg.listenFor('startReceived', () => {

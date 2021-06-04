@@ -6,18 +6,37 @@
 	<script type="text/javascript" src='js/jquery-3.6.0.js'></script>
 	<script type="text/javascript" src='js/functions.js'></script>
 	<script defer type="text/javascript" src="js/overtimepanel.js"></script>
+	<script type="text/javascript" src="js/timepanel.js"></script>
 </head>
 <body>
-	<button type='button' id='start' onclick='startTimer()'>start</button>
-	<button type='button' id='pause' onclick='pauseTimer();'>pause</button>
-	<button type='button' id='reset' onclick='resetTimer();'>reset</button>
+	<p1>Timer Controls:</p1>
 	<br />
+	<button type='button' id='start' onclick='startTimer()'>Start</button>
+	<button type='button' id='pause' onclick='pauseTimer();'>Pause</button>
+	<button type='button' id='reset' onclick='resetTimer();'>Reset</button>
+	<br />
+	<br />
+	<button onclick="sendHideScoreBoard()">Hide Whole Scoreboard</button>
+	<br />
+	<br />
+	<p1>Set Timer Value: <br />(CANNOT RESUME FROM THIS):
+	<br />
+	<br />
+	<input type="time" placeholder="45:00" id="timeSetBox">
+	<br />
+	<br />
+	<button type="button" id="setTime" onclick="sendTimeValue()">-----Set Time-----</button>
+	<br />
+	<br />
+
+
+	<p1>Over-Time Controls:</p1>
 	<br />
 	<br />
 	<input type="time" placeholder="03:00" id="overtimeSetBox">
 	<br />
 	<br />
-	<button type="button" id="setOvertime" onclick="sendOvertimeValue()">-Set-</button>
+	<button type="button" id="setOvertime" onclick="sendOvertimeValue()">--Overtime Set--</button>
 	<br />
 	<br />
 	<input type="checkbox" id="toggleOvertimeCheckbox" class="toggleOvertimeCheckbox" name="toggleOvertime" value="toggleOvertime">

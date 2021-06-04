@@ -5,32 +5,54 @@
 	<title>Graphics Page</title>
     <meta charset='UTF-8'>
 	<link rel='stylesheet' href='css/styles.css'>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
 	<script type="text/javascript" src='js/jquery-3.6.0.js'></script>
 	<script defer type="text/javascript" src='js/dragthediv.js'></script>
 	<script type="text/javascript" src='js/livescore/timer.js'></script>
 	<script type="text/javascript" src='js/playernames/xmlparser.js'></script>
 	<script type="text/javascript" src='js/network.js'></script>
 	<script type="text/javascript" src='js/livescore/overtime.js'></script>
+	<script type="text/javascript" src='js/scorebug/scorebug.js'></script>
 </head>
 <body>
-<div id='livescorediv'>
-    <div id='livescorebox' class='livescoretimer'>
-		<span id='minute'>00</span><span id='seperator'>:</span><span id='second'>00</span>
+
+<img src="assets/img/loitv.png" id="loitv">
+
+<div id="scorebugbox">
+	<div id="teamCrests">
+		<img id="crestTeam1" src="assets/img/shamrockrovers.png">
+		<img id="crestTeam2" src="assets/img/shamrockrovers.png">
 	</div>
-	<div id="overtimebox" class="overtime">
-		<span id='overtimeMinute'>00</span><span id='seperator'>:</span><span id='overtimeSecond'>00</span>
+	<div class="float" id="teamNames">
+		<p class="float fontBoldXXLarge" id="teamName1">SHA</p>
+		<p class="float fontBoldXXLarge" id="teamName2">SHA</p>
+		</div>
+	<div class="abfloat" id="points">
+		<p class="float fontBoldXXLarge white" id="teamPoints1">0</p>
+		<p class="float fontBoldXXLarge white" id="teamPointsDivider">-</p>
+		<p class="float fontBoldXXLarge white" id="teamPoints2">0</p>
 	</div>
+	<img id="scorebugimage" src="assets/img/scorebug.png">
+		<div id='livescorediv'>
+			<div id='livescorebox'>
+				<span class="fontBoldXXLarge" id='minute'>00</span><span class="fontBoldXXLarge" id='seperator'>:</span><span class="fontBoldXXLarge" id='second'>00</span>
+			</div>
+			<div id="overtimebox" class="overtime fontBoldXXLarge">
+				<span id='overtimeMinute'>00</span><span id='seperator'>:</span><span id='overtimeSecond'>00</span>
+			</div>
+		</div>
+	</div>
+
+<div id="lineupDiv">
+	<img id="fullLineup" src="assets/img/fullscreenslate.png">
+</div>
+
+<div id="tickerdiv">
+	<img id="tickerbar" src="assets/img/ticker.png">
+	<marquee id="ticker" class="fontBoldXXLarge" Scrollamount=15 behavior="scroll" direction="left"><span id="tickerChars">So... This is a ticker! Uhm, make a panel section to change & hide me Conor!?</span></marquee>
 </div>
 
 <script>window.onload = hideOvertime();</script>
-
-
-
-
-
-
-<div id='lineupbox'>
-	<span></span>
-</div>
 </body>
 </html>
