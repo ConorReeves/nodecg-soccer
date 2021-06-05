@@ -107,16 +107,16 @@ body{
 	position: fixed;
 }
 #teamPoints1 {
-	left: 464px;
-	top: -6px;
+	left: 390px;
+	top: 42px;
 }
 #teamPointsDivider {
-	left: 430px;
-	top: -121px;
+	left: 402px;
+	top: 40px;
 }
 #teamPoints2 {
-	left: 386px;
-	top: -227.5px;
+	left: 414px;
+	top: 42px;
 }
 #fullLineup {
 	margin-left: 260px;

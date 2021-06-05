@@ -22,18 +22,32 @@
      "compatibleRange":"^1.1.1",
      "dashboardPanels":[
         {
-           "name":"livescorepanel",
-           "title":"LiveScore Panel",
+           "name":"timerpanel",
+           "title":"Timer Panel",
            "width":2,
-           "file":"livescore.html",
+           "file":"timer.html",
            "headerColor":"#525F78"
         },
         {
           "name":"lineuppanel",
           "title":"Line Up Panel",
-          "width":2,
+          "width":4,
           "file":"lineup.html",
           "headerColor":"#525F78"
+       },
+       {
+         "name":"tickercontrolpanel",
+         "title":"Ticker Panel",
+         "width":2,
+         "file":"ticker.html",
+         "headerColor":"#525F78"
+      },
+       {
+         "name":"scorecontrolpanel",
+         "title":"Score Panel",
+         "width":2,
+         "file":"score.html",
+         "headerColor":"#525F78"
        }
      ],
      "graphics":[

@@ -9,11 +9,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
 	<script type="text/javascript" src='js/jquery-3.6.0.js'></script>
 	<script defer type="text/javascript" src='js/dragthediv.js'></script>
-	<script type="text/javascript" src='js/livescore/timer.js'></script>
-	<script type="text/javascript" src='js/playernames/xmlparser.js'></script>
+	<script type="text/javascript" src='js/timer/timer.js'></script>
+	<script type="text/javascript" src='js/lineup/xmlparser.js'></script>
+	<script type="text/javascript" src='js/lineup/lineup.js'></script>
+	<script type="text/javascript" src='js/ticker/ticker.js'></script>
 	<script type="text/javascript" src='js/network.js'></script>
-	<script type="text/javascript" src='js/livescore/overtime.js'></script>
+	<script type="text/javascript" src='js/timer/overtime.js'></script>
 	<script type="text/javascript" src='js/scorebug/scorebug.js'></script>
+	<script defer type="text/javascript" src='js/score/scoresetting.js'></script>
 </head>
 <body>
 
@@ -29,9 +32,9 @@
 		<p class="float fontBoldXXLarge" id="teamName2">SHA</p>
 		</div>
 	<div class="abfloat" id="points">
-		<p class="float fontBoldXXLarge white" id="teamPoints1">0</p>
-		<p class="float fontBoldXXLarge white" id="teamPointsDivider">-</p>
-		<p class="float fontBoldXXLarge white" id="teamPoints2">0</p>
+		<span class="float fontBoldXXLarge white" id="teamPoints1">0</span>
+		<span class="float fontBoldXXLarge white" id="teamPointsDivider">-</span>
+		<span class="float fontBoldXXLarge white" id="teamPoints2">0</span>
 	</div>
 	<img id="scorebugimage" src="assets/img/scorebug.png">
 		<div id='livescorediv'>
@@ -50,9 +53,9 @@
 
 <div id="tickerdiv">
 	<img id="tickerbar" src="assets/img/ticker.png">
-	<marquee id="ticker" class="fontBoldXXLarge" Scrollamount=15 behavior="scroll" direction="left"><span id="tickerChars">So... This is a ticker! Uhm, make a panel section to change & hide me Conor!?</span></marquee>
+	<marquee id="ticker" class="fontBoldXXLarge" Scrollamount=15 behavior="scroll" direction="left"><span id="tickerChars">Placeholder</span></marquee>
 </div>
 
-<script>window.onload = hideOvertime();</script>
+<script>window.onload = hideOvertime(), hideAllLineup(), tickerBugBoxToggle()</script>
 </body>
 </html>

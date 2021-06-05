@@ -4,20 +4,20 @@
 		<meta charset='UTF-8'>
 		<link rel='stylesheet' href='css/styles.css'>
 		<script type="text/javascript" src='js/jquery-3.6.0.js'></script>
-		<script type="text/javascript" src='js/functions.js'></script>
+		<script type="text/javascript" src='js/lineup.js'></script>
 		<script defer type="text/javascript" src='js/loadxmlfile.js'></script>
 	</head>
 <body>
-<div id="beans">
+<div id="lineupInput">
 <h1>Team Name Boxes Go Here!</h1>
 	<br />
 	<label for="player1">Player 1:</label>
 	<br />
-	<input type="text" namme="player1" id="player1">
+	<input type="text" name="player1" id="player1">
 	<br />
 	<label for="player2">Player 2:</label>
 	<br />
-	<input type="text" namme="player2" id="player2">
+	<input type="text" name="player2" id="player2">
 	<br />
 	<label for="player3">Player 3:</label>
 	<br />
@@ -25,12 +25,14 @@
 	<br />
 	<label for="player4">Player 4:</label>
 	<br />
-	<input type="text" namme="player4" id="player4">
+	<input type="text" name="player4" id="player4">
 	<br />
 	<input type="file" type="text/xml" id="input">
-
-
-
+	<br />
+	<br />
+</div>
+<div id="lineupControl">
+	<button type='button' id='hideLineupButton' onclick='sendHideAllLineup();'>Hide Lineup</button>
 </div>
 </body>
 </html>
