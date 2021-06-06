@@ -1,63 +1,74 @@
 {
-  "name":"nodecg-soccer",
-  "version":"0.0.0",
-  "description":"nodecg-soccer for loi",
-  "homepage":"conorreeves.github.io/loi",
-  "author":{
-     "name":"Conor Reeves",
-     "email":"conor@vitel.tv",
-     "url":"conorreeves.github.io"
+  "name": "nodecg-soccer",
+  "version": "0.0.0",
+  "description": "nodecg-soccer for loi",
+  "homepage": "conorreeves.github.io/loi",
+  "author": {
+    "name": "Conor Reeves",
+    "email": "conor@vitel.tv",
+    "url": "conorreeves.github.io"
   },
-  "files":[
-     "dashboard",
-     "graphics",
-     "extension.js",
-     "extension"
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
   ],
-  "keywords":[
-     "",
-     "nodecg-bundle"
+  "keywords": [
+    "",
+    "nodecg-bundle"
   ],
-  "nodecg":{
-     "compatibleRange":"^1.1.1",
-     "dashboardPanels":[
-        {
-           "name":"timerpanel",
-           "title":"Timer Panel",
-           "width":2,
-           "file":"timer.html",
-           "headerColor":"#525F78"
-        },
-        {
-          "name":"lineuppanel",
-          "title":"Line Up Panel",
-          "width":4,
-          "file":"lineup.html",
-          "headerColor":"#525F78"
-       },
-       {
-         "name":"tickercontrolpanel",
-         "title":"Ticker Panel",
-         "width":2,
-         "file":"ticker.html",
-         "headerColor":"#525F78"
+  "nodecg": {
+    "compatibleRange": "^1.1.1",
+    "dashboardPanels": [{
+      "name": "timerpanel",
+      "title": "Timer Panel",
+      "width": 2,
+      "file": "timer.html",
+      "headerColor": "#525F78"
+    },
+      {
+        "name": "lineuppanel",
+        "title": "Line Up Panel",
+        "width": 4,
+        "file": "lineup.html",
+        "headerColor": "#525F78"
       },
-       {
-         "name":"scorecontrolpanel",
-         "title":"Score Panel",
-         "width":2,
-         "file":"score.html",
-         "headerColor":"#525F78"
-       }
-     ],
-     "graphics":[
-        {
-           "file":"index.html",
-           "width":1920,
-           "height":1080
-        }
-     ]
+      {
+        "name": "tickercontrolpanel",
+        "title": "Ticker Panel",
+        "width": 2,
+        "file": "ticker.html",
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "scorecontrolpanel",
+        "title": "Score Panel",
+        "width": 2,
+        "file": "score.html",
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "substitutionpanel",
+        "title": "Substitution Panel",
+        "width": 2,
+        "file": "substitution.html",
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "cardspanel",
+        "title": "Cards Panel",
+        "width": 2,
+        "file": "cards.html",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [{
+      "file": "index.html",
+      "width": 1920,
+      "height": 1080
+    }]
   },
-  "repository":"https://github.com/ConorReeves/nodecg-soccer.git",
-  "license":""
+  "repository": "https://github.com/ConorReeves/nodecg-soccer.git",
+  "license": ""
 }

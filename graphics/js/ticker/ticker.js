@@ -1,5 +1,5 @@
 function tickerBugBoxToggle() {
-	let box = document.getElementById("tickerdiv");
+	let box = document.getElementById("tickerDiv");
 	if (box.style.display === "none") {
 		box.style.display = "block";
 	} else {

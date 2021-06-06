@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Substitution Panel</title>
+	<script type="text/javascript" src='js/jquery-3.6.0.js'></script>
+	<script defer type="text/javascript" src='js/substitution.js'></script>
+</head>
+<body>
+
+<br />
+<br />
+<label for="playerOffNumber">Off info:</label><br>
+<input type="text" id="playerOffNumber" class="playerOffNumber" name="playerOffNumber" size="2" maxlength="2" placeholder="14">
+<input type="text" id="playerOffName" class="playerOffName" name="playerOffName" placeholder="John Doe">
+<br />
+<br />
+<label for="playerOnNumber">On info:</label><br>
+<input type="text" id="playerOnNumber" class="playerOnNumber" name="playerOnNumber" size="2" maxlength="2" placeholder="23">
+<input type="text" id="playerOnName" class="playerOnName" name="playerOnName" placeholder="John Doe">
+<br />
+<br />
+<button type='button' id='submitTickerValue' onclick='submitAllSub();'>Submit Sub Values</button>
+<br />
+<br />
+<br />
+<input type="checkbox" id="toggleSubstitutionCheckbox" onclick="subBoxToggle()">
+<label for="toggleSubstitutionCheckbox">Toggle Substitution Box</label><br>
+
+</body>
+</html>

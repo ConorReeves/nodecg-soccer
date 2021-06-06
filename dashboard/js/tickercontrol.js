@@ -5,7 +5,7 @@ function toggleTicker() {
 
 const toggleTickerPath = document.getElementById("toggleTickerCheckbox");
 
-function checkBoxChange() {
+function tickerBoxChange() {
 	if (toggleTickerPath.checked) {
 		toggleTicker();
 	} else {

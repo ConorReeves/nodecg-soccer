@@ -21,6 +21,7 @@
 	<script type="text/javascript" src='js/scorebug/scorebug.js'></script>
 	<script type="text/javascript" src='js/animation/bouncescorebugbox.js'></script>
 	<script defer type="text/javascript" src='js/score/scoresetting.js'></script>
+	<script type="text/javascript" src='js/substitution/substitution.js'></script>
 </head>
 <body>
 
@@ -32,9 +33,9 @@
 
 	<div id='timerDiv'>
 		<div id='timerBox'>
-			<span class="fontBoldXXLarge" id='minute'>00</span><span class="fontBoldXXLarge" id='seperator'>:</span><span class="fontBoldXXLarge" id='second'>00</span>
+			<span class="fontBoldXXXLarge" id='minute'>00</span><span class="fontBoldXXXLarge" id='seperator'>:</span><span class="fontBoldXXXLarge" id='second'>00</span>
 		</div>
-		<div id="overtimeBox" class="fontBoldXXLarge">
+		<div id="overtimeBox" class="fontBoldXXXLarge">
 			<span id='overtimeMinute'>00</span><span id='seperator'>:</span><span id='overtimeSecond'>00</span>
 		</div>
 	</div>
@@ -69,11 +70,27 @@
 	<img id="fullLineup" src="assets/img/fullscreenslate.png">
 </div>
 
-<div id="tickerdiv">
-	<img id="tickerbar" src="assets/img/ticker.png">
-	<marquee id="ticker" class="fontBoldXXLarge" Scrollamount=15 behavior="scroll" direction="left"><span id="tickerChars">Placeholder</span></marquee>
+<div id="tickerDiv">
+	<img id="tickerBar" src="assets/img/ticker.png">
+	<marquee id="ticker" class="fontBoldXXXLarge" Scrollamount=15 behavior="scroll" direction="left"><span id="tickerChars">Placeholder</span></marquee>
 </div>
 
-<script>window.onload = hideOvertime(), hideAllLineup(), tickerBugBoxToggle()</script>
+<div id="substitutionDiv">
+
+	<div id="subOffBox">
+		<span id="numberPlayerOff" class="fontBoldXXXLarge">14</span>
+		<span id="namePlayerOff" class="fontBoldXXLarge">Don Doff</span>
+		<img src="assets/img/off.png" id="playerOffImage">
+	</div>
+
+	<div id="subOnBox">
+		<span id="numberPlayerOn" class="fontBoldXXXLarge">25</span>
+		<span id="namePlayerOn" class="fontBoldXXLarge">John Don</span>
+		<img src="assets/img/on.png" id="playerOnImage">
+	</div>
+
+</div>
+
+<script>window.onload = hideOvertime(), hideAllLineup(), tickerBugBoxToggle(), subBoxToggleGFX()</script>
 </body>
 </html>
