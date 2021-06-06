@@ -1,24 +1,15 @@
-// Set Timer Val from Panel
-
-nodecg.listenFor('timeBoxValue', (data) => {
-	nodecg.log.info("Time Received = "+data);
-	const timeData = data;
-	const timeMinuteChars = timeData.substring(0,2);
-	const timeSecondChars = timeData.substring(3,5);
-	document.getElementById('minute').innerText = timeMinuteChars;
-	document.getElementById('second').innerText = timeSecondChars;
-});
+'use strict';
+// Timer vars
+var minute = 0;
+var second = 0;
+var millisecond = 0;
 
 'use strict';
 // Timer fncs
-let minute = 0;
-let second = 0;
-let millisecond = 0;
-
 let cron;
 
 function start() {
-    nodecg.log.info('Timer Started')
+    nodecg.log.info('Timer Started!')
     pause();
     cron = setInterval(() => {
         timer();
@@ -35,6 +26,14 @@ function reset() {
     document.getElementById('minute').innerText = '00';
     document.getElementById('second').innerText = '00';
     nodecg.log.info('Timer Reset')
+}
+
+function setTo45() {
+	minute = 45;
+	second = 0;
+	document.getElementById('minute').innerText = '45';
+	document.getElementById('second').innerText = '00';
+	nodecg.log.info('Timer Set to 45:00')
 }
 
 function timer() {
@@ -58,3 +57,21 @@ function pauseandlog() {
     clearInterval(cron);
     nodecg.log.info('Timer Paused')
 }
+
+// Set Timer Val from Panel
+
+nodecg.listenFor('timeBoxValue', (data) => {
+	nodecg.log.info("Time Received = "+data);
+	const timeData = data;
+	const timeMinuteChars = timeData.substring(0,2);
+	const timeSecondChars = timeData.substring(3,5);
+	document.getElementById('minute').innerText = timeMinuteChars;
+	minute = timeMinuteChars;
+	document.getElementById('second').innerText = timeSecondChars;
+	second = timeSecondChars;
+		});
+
+nodecg.listenFor('setTo45Message', (data) => {
+	nodecg.log.info("Set to 45 Message Received");
+	setTo45();
+});

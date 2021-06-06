@@ -1,9 +1,9 @@
 function hideOvertime() {
-	let box = document.getElementById("overtimebox");
-	if (box.style.display === "none") {
-		box.style.display = "block";
+	let overtimeBox = document.querySelector("#overtimeBox");
+	if (overtimeBox.style.display === "none") {
+		overtimeBox.style.display = "block";
 	} else {
-		box.style.display = "none";
+		overtimeBox.style.display = "none";
 	}
 }
 
@@ -12,6 +12,6 @@ nodecg.listenFor('overtimeBoxValue', (data) => {
 	const overTimeData = data;
 	const overtimeMinuteChars = overTimeData.substring(0,2);
 	const overtimeSecondChars = overTimeData.substring(3,5);
-	document.getElementById('overtimeMinute').innerText = "+"+overtimeMinuteChars;
+	document.getElementById('overtimeMinute').innerText = "+ "+overtimeMinuteChars;
 	document.getElementById('overtimeSecond').innerText = overtimeSecondChars;
 });

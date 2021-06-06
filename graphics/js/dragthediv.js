@@ -1,5 +1,5 @@
 // Make the DIV element draggable:
-dragElement(document.getElementById('scorebugbox'));
+dragElement(document.getElementById(''));
 
 function dragElement(elmnt) {
     var pos1 = 0,

@@ -1,126 +1,95 @@
 body{
 	font-family: 'Assistant', sans-serif;
-	background:hsl()!important;
+	background: hsl()!important;
+	height: 100%;
 }
-.fontBoldXXLarge{
-	font-weight:500;
+.fontBoldXXXLarge{
+	font-weight: 500;
 	font-size: xxx-large;
 }
-.white{
+.white {
 	color: white;
 }
-#livescorediv{
-	position:absolute;
-	margin-top: -103px;
-	margin-left: 33px;
-	display:flex;
-	flex-direction:column;
+#loitv
+{
+	width: 230px;
+	height: 80px;
+	position: absolute;
+	left:1620px;
+	top:74px;
 }
-#livescorebox{
-	padding:6px;
-	object-fit: contain;
-}
-
-#overtimebox {
-	display:flex;
-	flex-direction:column;
-	color:#fff;
-	text-align: center;
-	background:linear-gradient(to bottom,#000 0, #444444 50%,#000 100%);
-	margin-left: 4px;
-}
-#scorebugimage{
-	padding:1em 0 0 1em;
-	cursor:move;
-	z-index:8;
+#scoreImage {
+	position: absolute;
 	width:720px;
-	height:120px
+	height:120px;
+	left: 5em;
+	top: 3em;
 }
-#scorebugbox{
-	position:absolute;
-	padding:1em 0 0 1em;
-	cursor:move;
-	top: -37px; left: -12px;
-}
-#loitv {
-	width: 300px;
-	height: 85px;
+#timerDiv {
 	position: absolute;
-	left:1580px;
-	top:64px;
+	z-index: 1;
+	font-size: xxx-large;
 }
-#tickerbar {
-	width: 1910px;
-	height: 85px;
-	position: absolute;
-	left:5px;
-	top:950px;
+#timerBox {
+	text-align: center;
+	margin: 69px 0 0 65px;
+	width: 140px;
+	height: 62.5px;
+	background: rgba(255,255,255,0.7);
+	border: white;
+	border-radius: 5px;
 }
-#ticker {
-	width: 1850px;
-	height: 85px;
-	position: absolute;
-	left:5px;
-	top:955px;
-	color: white;
-	margin-left: 32px;
-	margin-right: 1000px;
+#overtimeBox {
+	text-align: center;
+	margin: 10px 0 0 65px;
+	width: 140px;
+	height: 65px;
+	font-size: xxx-large;
+	background: rgba(0,0,0,0.7);
+	border: white;
+	border-radius: 5px;
+	color: red;
 }
 #crestTeam1 {
-	width: 54px;
-	height: 48px;
-	position: relative;
-	z-index: 100;
-	top:103px;
-	left: 190px;
+	width: 60px;
+	height: 54px;
+	z-index: 2;
+	position: absolute;
+	top:80px;
+	left: 255px;
 }
 #crestTeam2 {
-	width: 54px;
-	height: 48px;
-	position: relative;
-	z-index: 100;
-	top:103px;
-	left: 572px;
-}
-.float {
-	position: relative;
-}
-#teamName1 {
-	width: 54px;
-	height: 48px;
+	width: 60px;
+	height: 58px;
+	z-index: 3;
 	position: absolute;
-	z-index: 100;
-	top:-6px;
-	left: 262px;
-	font-weight:600;
+	top: 78px;
+	left: 691px;
 }
-#teamName2 {
-	width: 54px;
-	height: 48px;
+#nameTeam1 {
 	position: absolute;
-	z-index: 100;
-	top:-6px;
-	left: 530px;
-	font-weight:600;
+	top:25px;
+	left: 323px;
 }
-.abfloat {
-	position: fixed;
+#nameTeam2 {
+	position: absolute;
+	top:25px;
+	left: 605px;
 }
 #teamPoints1 {
-	left: 390px;
-	top: 42px;
+	position: absolute;
+	top:72.5px;
+	left: 455px;
 }
 #teamPointsDivider {
-	left: 402px;
-	top: 40px;
+	position: absolute;
+	top:70px;
+	left: 496px;
 }
 #teamPoints2 {
-	left: 414px;
-	top: 42px;
+	position: absolute;
+	top:72.5px;
+	left: 528px;
 }
-#fullLineup {
-	margin-left: 260px;
-	margin-top: 200px;
-	height: 800px;
-	width: 1366px;
-}
+
+

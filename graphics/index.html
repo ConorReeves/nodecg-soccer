@@ -8,43 +8,61 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
 	<script type="text/javascript" src='js/jquery-3.6.0.js'></script>
+	<script type="text/javascript" src='libraries/bounce.js'></script>
+	<script type="text/javascript" src='js/network.js'></script>
+	<!--
 	<script defer type="text/javascript" src='js/dragthediv.js'></script>
+	-->
 	<script type="text/javascript" src='js/timer/timer.js'></script>
 	<script type="text/javascript" src='js/lineup/xmlparser.js'></script>
 	<script type="text/javascript" src='js/lineup/lineup.js'></script>
 	<script type="text/javascript" src='js/ticker/ticker.js'></script>
-	<script type="text/javascript" src='js/network.js'></script>
 	<script type="text/javascript" src='js/timer/overtime.js'></script>
 	<script type="text/javascript" src='js/scorebug/scorebug.js'></script>
+	<script type="text/javascript" src='js/animation/bouncescorebugbox.js'></script>
 	<script defer type="text/javascript" src='js/score/scoresetting.js'></script>
 </head>
 <body>
 
 <img src="assets/img/loitv.png" id="loitv">
 
-<div id="scorebugbox">
+<div id="scorebugbox" class="scoreBoxToggleAnim">
+
+	<img id="scoreImage" src="assets/img/scorebug.png">
+
+	<div id='timerDiv'>
+		<div id='timerBox'>
+			<span class="fontBoldXXLarge" id='minute'>00</span><span class="fontBoldXXLarge" id='seperator'>:</span><span class="fontBoldXXLarge" id='second'>00</span>
+		</div>
+		<div id="overtimeBox" class="fontBoldXXLarge">
+			<span id='overtimeMinute'>00</span><span id='seperator'>:</span><span id='overtimeSecond'>00</span>
+		</div>
+	</div>
+
 	<div id="teamCrests">
 		<img id="crestTeam1" src="assets/img/shamrockrovers.png">
-		<img id="crestTeam2" src="assets/img/shamrockrovers.png">
+		<img id="crestTeam2" src="assets/img/finnharps.png">
 	</div>
-	<div class="float" id="teamNames">
-		<p class="float fontBoldXXLarge" id="teamName1">SHA</p>
-		<p class="float fontBoldXXLarge" id="teamName2">SHA</p>
-		</div>
-	<div class="abfloat" id="points">
-		<span class="float fontBoldXXLarge white" id="teamPoints1">0</span>
-		<span class="float fontBoldXXLarge white" id="teamPointsDivider">-</span>
-		<span class="float fontBoldXXLarge white" id="teamPoints2">0</span>
+
+
+	<div class="teamNames" id="teamNames">
+		<p class="fontBoldXXXLarge" id="nameTeam1">SHA</p>
+		<p class="fontBoldXXXLarge" id="nameTeam2">FIN</p>
 	</div>
-	<img id="scorebugimage" src="assets/img/scorebug.png">
-		<div id='livescorediv'>
-			<div id='livescorebox'>
-				<span class="fontBoldXXLarge" id='minute'>00</span><span class="fontBoldXXLarge" id='seperator'>:</span><span class="fontBoldXXLarge" id='second'>00</span>
-			</div>
-			<div id="overtimebox" class="overtime fontBoldXXLarge">
-				<span id='overtimeMinute'>00</span><span id='seperator'>:</span><span id='overtimeSecond'>00</span>
-			</div>
+
+	<div class="white" id="points">
+
+		<div id="teamPoints1Box">
+		<span class="fontBoldXXXLarge" id="teamPoints1">0</span>
 		</div>
+
+		<span class="fontBoldXXXLarge" id="teamPointsDivider">-</span>
+
+		<div id="teamPoints2Box">
+		<span class="fontBoldXXXLarge" id="teamPoints2">0</span>
+		</div>
+
+	</div>
 	</div>
 
 <div id="lineupDiv">

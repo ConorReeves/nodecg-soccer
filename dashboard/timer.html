@@ -19,17 +19,18 @@
 	<button onclick="sendHideScoreBoard()">Hide Whole Scoreboard</button>
 	<br />
 	<br />
-	<p1>Set Timer Value: <br />(CANNOT RESUME FROM THIS):
+	<p1>Set Timer Value: <br />(Ask Conor before use.):</p1>
 	<br />
 	<br />
-	<input type="time" placeholder="45:00" id="timeSetBox">
+	<input type="text" placeholder="00:00" id="timeSetBox">
 	<br />
 	<br />
 	<button type="button" id="setTime" onclick="sendTimeValue()">-----Set Time-----</button>
+		<br />
+		<br />
+		<button type='button' id='sendSetTo45' onclick='sendSetTo45();'>Set Timer to 45:00</button>
 	<br />
-	<br />
-
-
+	<br /><br />
 	<p1>Over-Time Controls:</p1>
 	<br />
 	<br />
