@@ -32,8 +32,12 @@ body{
 	position: absolute;
 	left:1620px;
 	top:74px;
+	opacity: 1;
+	transition: opacity 1s;
 }
-
+#loitv.hide {
+	opacity: 0;
+}
 /* Score & Time GFX Top-Left */
 
 #scorebugbox {

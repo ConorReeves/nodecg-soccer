@@ -1,9 +1,9 @@
 function hideLOI() {
-	document.getElementById("loitv").style.display = "none";
+	document.getElementById("loitv").classList.add("hide");
 }
 
 function showLOI() {
-	document.getElementById("loitv").style.display = "block";
+	document.getElementById("loitv").classList.remove("hide");
 }
 
 nodecg.listenFor('hideLOI', () => {
