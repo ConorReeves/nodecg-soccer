@@ -17,3 +17,15 @@ function minusScoreTeam2() {
 	nodecg.sendMessage('minusPointToTeam2');
 	nodecg.log.info('Minus Point to T2 Message sent!');
 }
+
+const loitvIsHidden = nodecg.Replicant('loitvIsHidden');
+
+function hideLOI() {
+	nodecg.sendMessage('hideLOI');
+	nodecg.log.info('hideLOI Message sent!');
+}
+
+function showLOI() {
+	nodecg.sendMessage('showLOI');
+	nodecg.log.info('showLOI Message sent!');
+}

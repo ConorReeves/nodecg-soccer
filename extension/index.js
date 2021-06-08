@@ -31,5 +31,4 @@ module.exports = function (nodecg) {
 	timerMinutes.value = 0;
 
 	timerSeconds.value = 0;
-
 };
