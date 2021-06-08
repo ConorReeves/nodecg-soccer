@@ -64,10 +64,6 @@
 		</div>
 
 	</div>
-	</div>
-
-<div id="lineupDiv">
-	<img id="fullLineup" src="assets/img/fullscreenslate.png">
 </div>
 
 <div id="tickerDiv">
@@ -91,6 +87,14 @@
 
 </div>
 
-<script>window.onload = hideOvertime(), hideAllLineup(), tickerBugBoxToggle(), subBoxToggleGFX()</script>
+<div id="lineupDiv" class="center">
+	<img id="lineupImg" src="assets/img/fullscreenslate.png">
+	<img id="sseLogoLineup" src="assets/img/sse_logo.png">
+	<div id="team1LineupBackground"></div>
+	<div id="team2LineupBackground"></div>
+	<span id="team1Player1">Mark O'Connelly</span>
+</div>
+
+<script>window.onload = hideOvertime(), /*hideAllLineup(),*/ tickerBugBoxToggle(), subBoxToggleGFX()</script>
 </body>
 </html>

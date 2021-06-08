@@ -14,6 +14,14 @@ body{
 .white {
 	color: white;
 }
+.center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: 5px solid #FFFF00;
+	padding: 10px;
+}
 #loitv
 {
 	width: 230px;
@@ -22,6 +30,9 @@ body{
 	left:1620px;
 	top:74px;
 }
+
+/* Score & Time GFX Top-Left */
+
 #scoreImage {
 	position: absolute;
 	width:720px;
@@ -51,7 +62,7 @@ body{
 	background: rgba(0,0,0,0.7);
 	border: white;
 	border-radius: 5px;
-	color: red;
+	color: white;
 }
 #crestTeam1 {
 	width: 60px;
@@ -94,6 +105,9 @@ body{
 	top:72.5px;
 	left: 528px;
 }
+
+/* Ticker */
+
 #tickerBar {
 	width: 1910px;
 	height: 85px;
@@ -111,6 +125,9 @@ body{
 	margin-left: 32px;
 	margin-right: 1000px;
 }
+
+/* Substitution */
+
 #subOffBox {
 	text-align: center;
 	position: absolute;
@@ -171,4 +188,48 @@ body{
 	height: auto;
 	bottom: -10px;
 	right: 312px;
+}
+
+/* Lineup */
+
+#lineupDiv {
+	background: orange;
+    z-index:-50;
+}
+#lineupImg {
+	max-width:1366px;
+	max-height:1920px;
+	width: auto;
+	height: auto;
+}
+#sseLogoLineup {
+	position: absolute;
+	max-width:350px;
+	max-height:350px;
+	width: auto;
+	height: auto;
+	right: 518px;
+	top:100px;
+}
+#team1LineupBackground {
+	background: yellow;
+	width: 512px;
+	height: 512px;
+	position: absolute;
+	bottom: 256px;
+}
+#team2LineupBackground {
+	background: green;
+	width: 512px;
+	height: 512px;
+	position: absolute;
+	bottom: 256px;
+}
+#team1Player1{
+	background: red;
+	width:256px;
+	height: 256px;
+	position:relative;
+	bottom: 400px;
+	left:200px;
 }

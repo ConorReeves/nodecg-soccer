@@ -12,6 +12,6 @@ nodecg.listenFor('overtimeBoxValue', (data) => {
 	const overTimeData = data;
 	const overtimeMinuteChars = overTimeData.substring(0,2);
 	const overtimeSecondChars = overTimeData.substring(3,5);
-	document.getElementById('overtimeMinute').innerText = "+ "+overtimeMinuteChars;
+	document.getElementById('overtimeMinute').innerText = "+"+overtimeMinuteChars;
 	document.getElementById('overtimeSecond').innerText = overtimeSecondChars;
 });

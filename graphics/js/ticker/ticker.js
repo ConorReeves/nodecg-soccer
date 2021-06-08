@@ -6,7 +6,7 @@ function tickerBugBoxToggle() {
 		box.style.display = "none";
 	}
 }
-	nodecg.listenFor('tickerBoxToggleMessage', (data) => {
+	nodecg.listenFor('tickerBoxToggleMessage', () => {
 		nodecg.log.info('Ticker Toggle Message received!');
 		tickerBugBoxToggle()
 	});
@@ -14,5 +14,5 @@ function tickerBugBoxToggle() {
 
 nodecg.listenFor('tickerBoxValue', (data) => {
 	nodecg.log.info("Ticker Text Received = "+data);
-	document.getElementById('tickerChars').innerText = data;
+	document.getElementById('tickerChars').innerHTML = data;
 });
