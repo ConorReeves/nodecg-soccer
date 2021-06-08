@@ -1,8 +1,8 @@
 {
   "name": "nodecg-soccer",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "nodecg-soccer for loi",
-  "homepage": "conorreeves.github.io/loi",
+  "homepage": "https://github.com/ConorReeves/nodecg-soccer",
   "author": {
     "name": "Conor Reeves",
     "email": "conor@vitel.tv",
@@ -68,10 +68,10 @@
         "headerColor": "#525F78"
       },
       {
-        "name": "cardspanel",
-        "title": "Cards Panel",
+        "name": "identtoggles",
+        "title": "Ident's & Lower Thirds Panel",
         "width": 2,
-        "file": "cards.html",
+        "file": "identtoggles.html",
         "headerColor": "#525F78"
       }
     ],

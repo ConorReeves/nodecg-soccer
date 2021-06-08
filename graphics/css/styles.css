@@ -7,6 +7,10 @@ body{
 	font-weight: 500;
 	font-size: xxx-large;
 }
+.fontBoldXXXXLarge{
+	font-weight: 500;
+	font-size: 128pt;
+}
 .fontBoldXXLarge{
 	font-weight: 500;
 	font-size: xx-large;
@@ -34,10 +38,10 @@ body{
 
 #scoreImage {
 	position: absolute;
-	width:720px;
-	height:120px;
-	left: 5em;
-	top: 3em;
+	width:570px;
+	height:75px;
+	left: 13.5em;
+	top: 4.4em;
 }
 #timerDiv {
 	position: absolute;
@@ -189,47 +193,133 @@ body{
 	right: 312px;
 }
 
-/* Lineup */
-
-#lineupDiv {
-	background: orange;
-    z-index:-50;
-}
-#lineupImg {
-	max-width:1920px;
-	max-height:1080px;
+/* Full Start Ident */
+#matchFullIdentImg {
+	max-width:1620px;
+	max-height:948px;
 	width: auto;
 	height: auto;
+	position: center!important;
+	z-index: -1;
 }
-#sseLogoLineup {
+#sseLogoFullIdent {
 	position: absolute;
 	max-width:350px;
 	max-height:350px;
 	width: auto;
 	height: auto;
-	top:260px;
+	top:225px;
+	z-index: 11;
 }
-#team1LineupBackground {
-	background: yellow;
-	width: 512px;
-	height: 512px;
+#crestTeam1FullIdent {
+	max-width:512px;
+	max-height:512px;
+	width: auto;
+	height: auto;
+	margin-top: 300px;
+	margin-left:250px;
+	z-index: 12;
+}
+#crestTeam2FullIdent {
+	max-width:512px;
+	max-height:512px;
+	width: auto;
+	height: auto;
+	z-index:13;
+	position:absolute;
+	margin-left: 375px;
+	margin-top:260px;
+}
+#nameTeam1FullIdent {
 	position: absolute;
-	bottom: 256px;
-	left: 200px;
+	top:185px;
+	left: 275px;
 }
-#team2LineupBackground {
-	background: green;
-	width: 512px;
-	height: 512px;
+#nameTeam2FullIdent {
 	position: absolute;
-	bottom: 256px;
-	left: 1280px;
+	top:185px;
+	right: 345px;
 }
-#team1Player1{
-	background: red;
-	width:256px;
-	height: 256px;
-	position:relative;
-	bottom: 400px;
-	left:200px;
+#VSFullIdent {
+	position:absolute;
+}
+#locationFullIdent {
+	padding-top: 740px;
+	padding-right: 520px;
+}
+#dateFullIdent {
+	padding-top: 740px;
+	padding-left: 500px;
+}
+
+/* Halftime Ident */
+#matchHalftimeIdentImg {
+	max-width:1620px;
+	max-height:948px;
+	width: auto;
+	height: auto;
+	position: center!important;
+	z-index: -1;
+}
+#sseLogoHalftimeIdent {
+	position: absolute;
+	max-width:350px;
+	max-height:350px;
+	width: auto;
+	height: auto;
+	top:225px;
+	z-index: 11;
+}
+#crestTeam1HalftimeIdent {
+	max-width:512px;
+	max-height:512px;
+	width: auto;
+	height: auto;
+	margin-top: 300px;
+	margin-left:250px;
+	z-index: 12;
+}
+#crestTeam2HalftimeIdent {
+	max-width:512px;
+	max-height:512px;
+	width: auto;
+	height: auto;
+	z-index:13;
+	position:absolute;
+	margin-left: 375px;
+	margin-top:260px;
+}
+#nameTeam1HalftimeIdent {
+	position: absolute;
+	top:185px;
+	left: 275px;
+}
+#nameTeam2HalftimeIdent {
+	position: absolute;
+	top:185px;
+	right: 345px;
+}
+#halftimeTextIdent {
+	position:absolute;
+	padding-bottom:200px;
+	font-size: 50pt!important;
+}
+#locationHalftimeIdent {
+	padding-top: 740px;
+	padding-right: 520px;
+}
+#dateHalftimeIdent {
+	padding-top: 740px;
+	padding-left: 500px;
+}
+#teamPoints1HTIdent {
+	padding-top: 200px;
+	padding-right: 200px;
+}
+#seperatorPointsHTIdent {
+	padding-top: 185px;
+}
+#teamPoints2HTIdent {
+	padding-top: 200px;
+	padding-left: 200px;
 }

@@ -21,7 +21,6 @@
 	<script type="text/javascript" src='js/loitv/loitv.js'></script>
 	<script type="text/javascript" src='js/scorebug/scorebug.js'></script>
 	<script type="text/javascript" src='js/animation/bouncescorebugbox.js'></script>
-	<script defer type="text/javascript" src='js/score/scoresetting.js'></script>
 	<script type="text/javascript" src='js/substitution/substitution.js'></script>
 </head>
 <body>
@@ -88,7 +87,7 @@
 
 </div>
 
-<div id="lineupDiv" class="center">
+<div id="lineupDiv" class="">
 	<img id="lineupImg" src="assets/img/fullscreenslate.png">
 	<img id="sseLogoLineup" class="center" src="assets/img/sse_logo.png">
 	<div id="team1LineupBackground"></div>
@@ -96,6 +95,43 @@
 	<span id="team1Player1">Mark O'Connelly</span>
 </div>
 
-<script>window.onload = hideOvertime(), /*hideAllLineup(),*/ tickerBugBoxToggle(), subBoxToggleGFX()</script>
+<div id="matchFullIdent">
+	<img id="matchFullIdentImg" class="center" src="assets/img/fullscreenslate.png">
+	<img id="sseLogoFullIdent" class="center" src="assets/img/sse_logo.png">
+	<span id="VSFullIdent" class="white fontBoldXXXXLarge center">VS</span>
+	<span id="locationFullIdent" class="white fontBoldXXXLarge center">TALLAGHT STADIUM</span>
+	<span id="dateFullIdent" class="white fontBoldXXXLarge center">11TH JUNE 2021</span>
+	<div id="teamCrestsFullIdent">
+		<img id="crestTeam1FullIdent" src="assets/img/shamrockrovers.png">
+		<img id="crestTeam2FullIdent" src="assets/img/finnharps.png">
+	</div>
+	<div id="teamNamesFullIdent">
+		<span id="nameTeam1FullIdent" class="fontBoldXXXLarge">SHAMROCK ROVERS F.C.</span>
+		<span id="nameTeam2FullIdent" class="fontBoldXXXLarge">FINN HARPS F.C.</span>
+	</div>
+</div>
+
+<div id="halftimeIdent">
+	<img id="matchHalftimeIdentImg" class="center" src="assets/img/fullscreenslate.png">
+	<img id="sseLogoHalftimeIdent" class="center" src="assets/img/sse_logo.png">
+	<span id="halftimeTextIdent" class="white fontBoldXXXLarge center">HALF-TIME</span>
+	<span id="teamPoints1HTIdent" class="white fontBoldXXXXLarge center">0</span>
+	<span id="seperatorPointsHTIdent" class="white fontBoldXXXXLarge center">-</span>
+	<span id="teamPoints2HTIdent" class="white fontBoldXXXXLarge center">0</span>
+	<span id="locationHalftimeIdent" class="white fontBoldXXXLarge center">TALLAGHT STADIUM</span>
+	<span id="dateHalftimeIdent" class="white fontBoldXXXLarge center">11TH JUNE 2021</span>
+	<div id="teamCrestsHalftimeIdent">
+		<img id="crestTeam1HalftimeIdent" src="assets/img/shamrockrovers.png">
+		<img id="crestTeam2HalftimeIdent" src="assets/img/finnharps.png">
+	</div>
+	<div id="teamNamesHalftimeIdent">
+		<span id="nameTeam1HalftimeIdent" class="fontBoldXXXLarge">SHAMROCK ROVERS F.C.</span>
+		<span id="nameTeam2HalftimeIdent" class="fontBoldXXXLarge">FINN HARPS F.C.</span>
+	</div>
+</div>
+
+<script type="text/javascript" src='js/score/scoresetting.js'></script>
+<script type="text/javascript" src='js/ident/ident.js'></script>
+<script>window.onload = hideOvertime(), hideAllLineup(), tickerBugBoxToggle(), subBoxToggleGFX(), hideFullIdent(), hideHalftimeIdent()</script>
 </body>
 </html>

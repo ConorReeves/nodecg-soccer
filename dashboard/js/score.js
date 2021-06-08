@@ -18,8 +18,6 @@ function minusScoreTeam2() {
 	nodecg.log.info('Minus Point to T2 Message sent!');
 }
 
-const loitvIsHidden = nodecg.Replicant('loitvIsHidden');
-
 function hideLOI() {
 	nodecg.sendMessage('hideLOI');
 	nodecg.log.info('hideLOI Message sent!');
@@ -28,4 +26,9 @@ function hideLOI() {
 function showLOI() {
 	nodecg.sendMessage('showLOI');
 	nodecg.log.info('showLOI Message sent!');
+}
+
+function restorePointsFromRep() {
+	nodecg.sendMessage('restorePointsFromRep');
+	nodecg.log.info('restorePointsFromRep Message sent!');
 }

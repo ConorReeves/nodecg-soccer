@@ -4,8 +4,8 @@ var minute = 0;
 var second = 0;
 var millisecond = 0;
 
-const timerMinutes = nodecg.Replicant('timerMinutes');
-const timerSeconds = nodecg.Replicant('timerSeconds');
+const timerMinutesRep = nodecg.Replicant('timerMinutes');
+const timerSecondsRep = nodecg.Replicant('timerSeconds');
 
 'use strict';
 // Timer fncs
@@ -16,8 +16,8 @@ function start() {
     pause();
     cron = setInterval(() => {
         timer();
-		timerMinutes.value = returnData(minute);
-		timerSeconds.value = returnData(second);
+		timerMinutesRep.value = returnData(minute);
+		timerSecondsRep.value = returnData(second);
     }, 10);
 }
 
@@ -31,6 +31,8 @@ function reset() {
     document.getElementById('minute').innerText = '00';
     document.getElementById('second').innerText = '00';
     nodecg.log.info('Timer Reset')
+	timerMinutesRep.value = 0;
+    timerSecondsRep.value = 0;
 }
 
 function setTo45() {
@@ -39,6 +41,8 @@ function setTo45() {
 	document.getElementById('minute').innerText = '45';
 	document.getElementById('second').innerText = '00';
 	nodecg.log.info('Timer Set to 45:00')
+	timerMinutesRep.value = 45;
+	timerSecondsRep.value = 0;
 }
 
 function timer() {

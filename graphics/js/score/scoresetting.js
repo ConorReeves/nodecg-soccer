@@ -1,37 +1,45 @@
-const team1Points = nodecg.Replicant('team1Points');
-const team2Points = nodecg.Replicant('team2Points');
+let team1Points = 0
+let team2Points = 0
 
-var currPoints1Value = document.querySelector("#teamPoints1");
-var currPoints2Value = document.querySelector("#teamPoints2");
+const team1PointsRep = nodecg.Replicant('team1Points');
+const team2PointsRep = nodecg.Replicant('team2Points');
+
+
+var currPoints1Value = document.getElementById("teamPoints1");
+var currPoints2Value = document.getElementById("teamPoints2");
 
 function addPointTo1() {
-	team1Points.value ++;
-	currPoints1Value.innerText = team1Points.value;
-	team1Points.value = team1Points;
+	team1Points ++;
+	currPoints1Value.innerText = team1Points;
+	team1PointsRep.value = team1Points;
+	return 'Added Point to Team 1';
 }
 
 function minusPointTo1() {
-	team1Points.value --;
+	team1Points --;
 	currPoints1Value.innerText = team1Points;
-	team1Points.value = team1Points;
+	team1PointsRep.value = team1Points;
+	return 'Minus Point to Team 1';
 }
 
 function addPointTo2() {
-	team2Points.value ++;
+	team2Points ++;
 	currPoints2Value.innerText = team2Points;
-	team2Points.value = team2Points;
+	team2PointsRep.value = team2Points;
+	return 'Add Point to Team 2';
 }
 
 function minusPointTo2() {
-	team2Points.value --;
+	team2Points --;
 	currPoints2Value.innerText = team2Points;
-	team2Points.value = team2Points;
+	team2PointsRep.value = team2Points;
+	return 'Minus Point to Team 2';
 }
 
-function restoreToReplicant() {
-	currPoints1Value.innerText = team1Points.value;
-	currPoints2Value.innerText = team2Points.value;
-	return true;
+function restorePoints() {
+	currPoints1Value.innerText = team1PointsRep.value;
+	currPoints2Value.innerText = team2PointsRep.value;
+	return 'Restored Points';
 }
 
 nodecg.listenFor('addPointToTeam1', () => {
@@ -53,5 +61,13 @@ nodecg.listenFor('minusPointToTeam2', () => {
 	nodecg.log.info('addPointToTeam1 Message received!');
 	minusPointTo2();
 });
+
+nodecg.listenFor('restorePointsFromRep', () => {
+	nodecg.log.info('restorePointsFromRep Message received!');
+	restorePoints();
+});
+
+
+
 
 
