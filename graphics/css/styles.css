@@ -197,8 +197,8 @@ body{
     z-index:-50;
 }
 #lineupImg {
-	max-width:1366px;
-	max-height:1920px;
+	max-width:1920px;
+	max-height:1080px;
 	width: auto;
 	height: auto;
 }
@@ -217,6 +217,7 @@ body{
 	height: 512px;
 	position: absolute;
 	bottom: 256px;
+	left: 200px;
 }
 #team2LineupBackground {
 	background: green;
@@ -224,6 +225,7 @@ body{
 	height: 512px;
 	position: absolute;
 	bottom: 256px;
+	left: 1280px;
 }
 #team1Player1{
 	background: red;

@@ -7,6 +7,7 @@
 	<link rel='stylesheet' href='css/styles.css'>
 	<script type="text/javascript" src='js/jquery-3.6.0.js'></script>
 	<script type="text/javascript" src='js/score.js'></script>
+	<script type="text/javascript" src='js/3chars.js'></script>
 </head>
 <body>
 <label for="addScore1">Team 1 Points Control:</label>
@@ -16,11 +17,21 @@
 <button type='button' id='minusScore1' onclick='minusScoreTeam1();'>Minus Point</button>
 <br />
 <br />
-<label for="addScore2">Team 1 Points Control:</label>
+<label for="addScore2">Team 2 Points Control:</label>
 <br />
 <br />
 <button type='button' id='addScore2' onclick='addScoreTeam2();'>Add Point</button>
 <button type='button' id='minusScore2' onclick='minusScoreTeam2();'>Minus Point</button>
+<br />
+<br />
+<br />
+<label for="team1Chars">Team 1 Score Label:</label><br>
+<input type="text" id="team1Chars" name="team1Chars" placeholder='DEU'>
+<br />
+<label for="team2Chars">Team 2 Score Label:</label><br>
+<input type="text" id="team2Chars" name="team2Chars" placeholder='IRE'>
+<br />
+<button id="submit3Chars" onclick="submit3Chars()">Submit 3 Chars</button>
 
 </body>
 </html>

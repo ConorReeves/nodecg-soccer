@@ -4,6 +4,9 @@ var minute = 0;
 var second = 0;
 var millisecond = 0;
 
+const timerMinutes = nodecg.Replicant('timerMinutes');
+const timerSeconds = nodecg.Replicant('timerSeconds');
+
 'use strict';
 // Timer fncs
 let cron;
@@ -13,6 +16,8 @@ function start() {
     pause();
     cron = setInterval(() => {
         timer();
+		timerMinutes.value = returnData(minute);
+		timerSeconds.value = returnData(second);
     }, 10);
 }
 
@@ -71,7 +76,7 @@ nodecg.listenFor('timeBoxValue', (data) => {
 	second = timeSecondChars;
 		});
 
-nodecg.listenFor('setTo45Message', (data) => {
+nodecg.listenFor('setTo45Message', () => {
 	nodecg.log.info("Set to 45 Message Received");
 	setTo45();
 });
