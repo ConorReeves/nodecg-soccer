@@ -1,14 +1,12 @@
 // Toggle Appearance
-
 function scoreBugBoxToggle() {
-	let box = document.getElementById("scorebugbox");
-	if (box.style.display === "none") {
-		box.style.display = "block";
+	var scoreBugBoxEl = document.getElementById("scorebugbox");
+	if (scoreBugBoxEl.classList.contains("hide")) {
+		scoreBugBoxEl.classList.remove("hide");
 	} else {
-		box.style.display = "none";
+		scoreBugBoxEl.classList.add("hide");
 	}
 }
-
 
 nodecg.listenFor('hideScoreBug', () => {
 	nodecg.log.info('Hide Scoreboard Message received!');

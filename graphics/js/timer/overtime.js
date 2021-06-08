@@ -1,9 +1,9 @@
 function hideOvertime() {
 	let overtimeBox = document.querySelector("#overtimeBox");
-	if (overtimeBox.style.display === "none") {
-		overtimeBox.style.display = "block";
+	if (overtimeBox.classList.contains("hide")) {
+		overtimeBox.classList.remove("hide");
 	} else {
-		overtimeBox.style.display = "none";
+		overtimeBox.classList.add("hide");
 	}
 }
 

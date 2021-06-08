@@ -1,11 +1,11 @@
 // Starting Full Ident
 
 function hideFullIdent() {
-	document.querySelector("#matchFullIdent").style.display = "none";
+	document.querySelector("#matchFullIdent").classList.add("hide");
 }
 
 function showFullIdent() {
-	document.querySelector("#matchFullIdent").style.display = "block";
+	document.querySelector("#matchFullIdent").classList.remove("hide");
 }
 
 
@@ -22,11 +22,11 @@ nodecg.listenFor('showFullMatchIdent', () => {
 // Halftime Full Ident Toggling
 
 function hideHalftimeIdent() {
-	document.querySelector("#halftimeIdent").style.display = "none";
+	document.querySelector("#halftimeIdent").classList.add("hide");
 }
 
 function showHalftimeIdent() {
-	document.querySelector("#halftimeIdent").style.display = "block";
+	document.querySelector("#halftimeIdent").classList.remove("hide");
 }
 
 nodecg.listenFor('hideHalftimeIdent', () => {

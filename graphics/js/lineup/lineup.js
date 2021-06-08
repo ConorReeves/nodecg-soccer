@@ -1,13 +1,17 @@
 function hideAllLineup() {
-	let box = document.getElementById("lineupDiv");
-	if (box.style.display === "none") {
-		box.style.display = "block";
+	var lineupDivEl = document.getElementById("lineupDiv");
+	if (lineupDivEl.classList.contains("hide")) {
+		lineupDivEl.classList.remove("hide");
 	} else {
-		box.style.display = "none";
+		lineupDivEl.classList.add("hide");
 	}
 }
+
+
 
 nodecg.listenFor('hideAllLineupMessage', () => {
 	nodecg.log.info("Hide All Lineup Message Received = ");
 	hideAllLineup()
 });
+
+

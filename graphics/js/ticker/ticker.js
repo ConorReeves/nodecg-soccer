@@ -1,9 +1,9 @@
 function tickerBugBoxToggle() {
-	let box = document.getElementById("tickerDiv");
-	if (box.style.display === "none") {
-		box.style.display = "block";
+	let tickerBugBoxEl = document.getElementById("tickerDiv");
+	if (tickerBugBoxEl.classList.contains("hide")) {
+		tickerBugBoxEl.classList.remove("hide");
 	} else {
-		box.style.display = "none";
+		tickerBugBoxEl.classList.add("hide");
 	}
 }
 	nodecg.listenFor('tickerBoxToggleMessage', () => {

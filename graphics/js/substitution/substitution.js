@@ -1,11 +1,12 @@
 function subBoxToggleGFX() {
-	let subBoxElement = document.getElementById("substitutionDiv");
-	if (subBoxElement.style.display === "none") {
-		subBoxElement.style.display = "block";
+	let subBoxEl = document.getElementById("substitutionDiv");
+	if (subBoxEl.classList.contains("hide")) {
+		subBoxEl.classList.remove("hide");
 	} else {
-		subBoxElement.style.display = "none";
+		subBoxEl.classList.add("hide");
 	}
 }
+
 nodecg.listenFor('subBoxToggleMessage', () => {
 	nodecg.log.info('SubBox Toggle Message received!');
 	subBoxToggleGFX()
