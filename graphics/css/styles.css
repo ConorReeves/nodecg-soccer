@@ -2,6 +2,7 @@ body{
 	font-family: 'Assistant', sans-serif;
 	background: transparent!important;
 	height: 100%;
+	overflow: hidden;
 }
 .fontBoldXXXLarge{
 	font-weight: 500;
@@ -27,17 +28,18 @@ body{
 }
 #loitv
 {
-	width: 230px;
+	width: 240px;
 	height: 80px;
 	position: absolute;
 	left:1620px;
-	top:74px;
+	top:70px;
 	opacity: 1;
 	transition: opacity 1s;
 }
 #loitv.hide {
 	opacity: 0;
 }
+
 /* Score & Time GFX Top-Left */
 
 #scorebugbox {
@@ -64,10 +66,12 @@ body{
 	text-align: center;
 	margin: 69px 0 0 65px;
 	width: 140px;
-	height: 62.5px;
+	height: 64px;
 	background: rgba(255,255,255,0.7);
 	border: white;
 	border-radius: 5px;
+	position:absolute;
+	bottom: 180px;
 }
 #overtimeBox {
 	text-align: center;
@@ -80,6 +84,8 @@ body{
 	color: white;
 	opacity: 1;
 	transition: opacity 1s;
+	position: absolute;
+	bottom: 110px;
 }
 #overtimeBox.hide {
 	opacity:0;
@@ -164,13 +170,15 @@ body{
 #subOffBox {
 	text-align: center;
 	position: absolute;
-	margin: 50em 0 0 89.5em;
+	left: 1475px;
+	top: 875px;
 	width: 400px;
 	height: 65px;
 	background: linear-gradient(to top, grey 0%, lightgrey 50%, white 100%);
 	border: white;
 	border-radius: 5px;
 	color: black;
+	z-index: 99;
 }
 #numberPlayerOff {
 	position: absolute;
@@ -195,13 +203,15 @@ body{
 #subOnBox {
 	text-align: center;
 	position: absolute;
-	margin: 55em 0 0 89.5em;
+	left: 1475px;
+	top: 950px;
 	width: 400px;
 	height: 65px;
 	background: linear-gradient(to top, grey 0%, lightgrey 50%, white 100%);
 	border: white;
 	border-radius: 5px;
 	color: black;
+	z-index: 99;
 }
 #numberPlayerOn {
 	position: absolute;
@@ -253,10 +263,10 @@ body{
 	max-height:512px;
 	width: auto;
 	height: auto;
-	left:250px;
+	top: 370px;
+	left: 240px;
 	z-index: 12;
 	position: absolute;
-	top: 290px;
 }
 #crestTeam2FullIdent {
 	max-width:512px;
@@ -265,17 +275,17 @@ body{
 	height: auto;
 	z-index:13;
 	position:absolute;
-	top: 270px;
+	top: 340px;
 	left: 1175px;
 }
 #nameTeam1FullIdent {
 	position: absolute;
-	top:185px;
+	top:252px;
 	left: 275px;
 }
 #nameTeam2FullIdent {
 	position: absolute;
-	top:185px;
+	top:252px;
 	right: 345px;
 }
 #VSFullIdent {
@@ -321,8 +331,8 @@ body{
 	max-height:512px;
 	width: auto;
 	height: auto;
-	top: 290px;
-	left: 250px;
+	top: 370px;
+	left: 240px;
 	z-index: 12;
 	position:absolute;
 }
@@ -333,17 +343,17 @@ body{
 	height: auto;
 	z-index:13;
 	position:absolute;
-	top: 270px;
+	top: 340px;
 	left: 1175px;
 }
 #nameTeam1HalftimeIdent {
 	position: absolute;
-	top:185px;
+	top:252px;
 	left: 275px;
 }
 #nameTeam2HalftimeIdent {
 	position: absolute;
-	top:185px;
+	top:252px;
 	right: 345px;
 }
 #halftimeTextIdent {
@@ -376,16 +386,149 @@ body{
 #lineupDiv {
 	opacity: 1;
 	transition: opacity 1s;
-}
 
+}
 #lineupDiv.hide {
 	opacity: 0;
 }
+#lineupLocation {
+	position: absolute;
+	top: 945px;
+	font-size: 44pt!important;
+}
 #lineupImg {
-	max-width:1620px;
-	max-height:948px;
+	max-width:1800px;
+	max-height:1148px;
 	width: auto;
 	height: auto;
 	position: center!important;
 	z-index: -1;
+}
+
+#sseLogoLineup {
+	position: absolute;
+	max-width:350px;
+	max-height:350px;
+	width: auto;
+	height: auto;
+	top:206px;
+	z-index: 52;
+}
+#crestTeam1Lineup {
+	max-width:314px;
+	max-height:314px;
+	width: auto;
+	height: auto;
+	z-index:55;
+	position:absolute;
+	top: 95px;
+	left: 275px;
+}
+#crestTeam2Lineup {
+	max-width:314px;
+	max-height:314px;
+	width: auto;
+	height: auto;
+	z-index:55;
+	position:absolute;
+	top: 70px;
+	left: 1310px;
+}
+#namesTeam1Lineup {
+	background: transparent;
+	height: 580px;
+	width: 875px;
+	margin-left: 64px;
+	margin-top: 321px;
+	z-index: 51;
+	color: white;
+	font-size: 24pt;
+}
+#namesTeam2Lineup {
+	background: transparent;
+	position: relative;
+	height: 580px;
+	width: 875px;
+	margin-left: 950px;
+	color: white;
+	bottom: 580px;
+	font-size: 24pt;
+	z-index: 51;
+}
+
+/* T1 Names */
+
+#T1StartingXIDiv {
+	font-family: 'Assistant', sans-serif;
+	height: 544px;
+	width: 380px;
+	background-color:rgba(0,0,0,0.4);
+	margin-left: 480px;
+	border: 3px solid limegreen;
+	border-radius: 5px;
+	padding-top: 1em;
+}
+#T1StartingXI {
+	margin-left: 120px;
+}
+[id*="numt1"] {
+	margin-left: 25px;
+	margin-bottom:50px;
+}
+
+/* T1 Subs */
+
+#T1SubsDiv {
+	font-family: 'Assistant', sans-serif;
+	height: 420px;
+	width: 380px;
+	background-color:rgba(0,0,0,0.4);
+	margin-left: 95px;
+	border: 3px solid limegreen;
+	border-radius: 5px;
+	padding-top: 1em;
+	top: 380px;
+	position: absolute;
+}
+#T1Subs {
+	margin-left: 120px;
+}
+
+/* T2 Names */
+
+#T2StartingXIDiv {
+	font-family: 'Assistant', sans-serif;
+	height: 544px;
+	width: 380px;
+	background-color:rgba(0,0,0,0.4);
+	margin-left: 15px;
+	border: 3px solid cornflowerblue;
+	border-radius: 5px;
+	padding-top: 1em;
+}
+#T2StartingXI {
+	margin-left: 120px;
+}
+[id*="numt2"] {
+	margin-left: 25px;
+
+	margin-bottom:50px;
+}
+
+/* T2 Subs */
+
+#T2SubsDiv {
+	font-family: 'Assistant', sans-serif;
+	height: 420px;
+	width: 380px;
+	background-color:rgba(0,0,0,0.4);
+	margin-left: 400px;
+	border: 3px solid cornflowerblue;
+	border-radius: 5px;
+	padding-top: 1em;
+	top: 58px;
+	position: absolute;
+}
+#T2Subs {
+	margin-left: 120px;
 }
