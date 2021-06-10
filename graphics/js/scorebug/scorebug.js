@@ -1,16 +1,22 @@
 // Toggle Appearance
-function scoreBugBoxToggle() {
+function hideScoreBugBox() {
 	var scoreBugBoxEl = document.getElementById("scorebugbox");
-	if (scoreBugBoxEl.classList.contains("hide")) {
-		scoreBugBoxEl.classList.remove("hide");
-	} else {
 		scoreBugBoxEl.classList.add("hide");
-	}
+}
+
+function showScoreBugBox() {
+	var scoreBugBoxEl = document.getElementById("scorebugbox");
+	scoreBugBoxEl.classList.remove("hide");
 }
 
 nodecg.listenFor('hideScoreBug', () => {
 	nodecg.log.info('Hide Scoreboard Message received!');
-	scoreBugBoxToggle();
+	hideScoreBugBox();
+});
+
+nodecg.listenFor('showScoreBug', () => {
+	nodecg.log.info('Show Scoreboard Message received!');
+	showScoreBugBox();
 });
 
 // Change 3 Char Names

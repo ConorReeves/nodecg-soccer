@@ -1,18 +1,14 @@
-function toggleTicker() {
-	nodecg.sendMessage('tickerBoxToggleMessage');
-	nodecg.log.info('Ticker Box Message sent!');
+function sendHideTicker() {
+	nodecg.sendMessage('hideTickerBugBoxMessage');
+	nodecg.log.info('Hide Ticker Box Message sent!');
 }
 
-const toggleTickerPath = document.getElementById("toggleTickerCheckbox");
-
-function tickerBoxChange() {
-	if (toggleTickerPath.checked) {
-		toggleTicker();
-	} else {
-		toggleTicker();
-	}
-
+function sendShowTicker() {
+	nodecg.sendMessage('showTickerBugBoxMessageMessage');
+	nodecg.log.info('Show Ticker Box Message sent!');
 }
+
+
 
 // Changing Text
 const inputValuePath = document.getElementById("tickerTextValue");

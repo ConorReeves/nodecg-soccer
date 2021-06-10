@@ -16,7 +16,8 @@
 	<button type='button' id='reset' onclick='resetTimer();'>Reset</button>
 	<br />
 	<br />
-	<button onclick="sendHideScoreBoard()">Toggle Score Bug</button>
+	<button onclick="sendShowScoreBoard()">Show Score Bug</button>
+	<button onclick="sendHideScoreBoard()">Hide Score Bug</button>
 	<br />
 	<br />
 	<p1>Set Timer Value: <br />(Ask Conor before use.):</p1>
@@ -40,8 +41,9 @@
 	<button type="button" id="setOvertime" onclick="sendOvertimeValue()">--Overtime Set--</button>
 	<br />
 	<br />
-	<input type="checkbox" id="toggleOvertimeCheckbox" class="toggleOvertimeCheckbox" name="toggleOvertime" value="toggleOvertime">
-	<label for="toggleOvertimeCheckbox">Toggle Overtime</label><br>
-
+	<label for="showOvertimeBox">Toggle Overtime</label><br>
+	<br />
+	<button type="button" id="showOvertimeBox" onclick="showOvertimeBox()">Show Overtime</button>
+	<button type="button" id="hideOvertimeBox" onclick="hideOvertimeBox()">Hide Overtime</button>
 </body>
 </html>

@@ -1,15 +1,23 @@
-function tickerBugBoxToggle() {
-	let tickerBugBoxEl = document.getElementById("tickerDiv");
-	if (tickerBugBoxEl.classList.contains("hide")) {
-		tickerBugBoxEl.classList.remove("hide");
-	} else {
-		tickerBugBoxEl.classList.add("hide");
-	}
+function hideTickerBugBox() {
+	let overtimeBox = document.querySelector("#tickerDiv");
+	overtimeBox.classList.add("hide");
 }
-	nodecg.listenFor('tickerBoxToggleMessage', () => {
-		nodecg.log.info('Ticker Toggle Message received!');
-		tickerBugBoxToggle()
-	});
+
+function showTickerBugBox() {
+	let overtimeBox = document.querySelector("#tickerDiv");
+	overtimeBox.classList.remove("hide");
+}
+
+
+nodecg.listenFor('hideTickerBugBoxMessage', () => {
+		nodecg.log.info('Hide Ticker Toggle Message received!');
+	hideTickerBugBox()
+});
+
+nodecg.listenFor('showTickerBugBoxMessageMessage', () => {
+	nodecg.log.info('Show Ticker Toggle Message received!');
+	showTickerBugBox()
+});
 
 
 nodecg.listenFor('tickerBoxValue', (data) => {

@@ -1,22 +1,15 @@
-function toggleOvertimeBox() {
-	nodecg.sendMessage('overtimeBoxToggleMessage');
-	nodecg.log.info('OvertimeBox Message sent!');
+function showOvertimeBox() {
+	nodecg.sendMessage('overtimeBoxShowMessage');
+	nodecg.log.info('Show OvertimeBox Message sent!');
 }
 
-nodecg.listenFor('overtimeBoxToggleReceived', () => {
-	nodecg.log.info('OvertimeBox Acknowledgement received!');
-});
+function hideOvertimeBox() {
+	nodecg.sendMessage('overtimeBoxHideMessage');
+	nodecg.log.info('Hide OvertimeBox Message sent!');
+}
 
 function sendOvertimeValue() {
 	const inputValue = document.querySelector("#overtimeSetBox");
 	let realInput = inputValue.value;
 	nodecg.sendMessage('overtimeBoxValue', realInput);
 }
-
-$(".toggleOvertimeCheckbox").change(function() {
-	if(this.checked) {
-		toggleOvertimeBox();
-	} else {
-		toggleOvertimeBox();
-	}
-});

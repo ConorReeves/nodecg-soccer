@@ -1,10 +1,11 @@
 function hideOvertime() {
 	let overtimeBox = document.querySelector("#overtimeBox");
-	if (overtimeBox.classList.contains("hide")) {
-		overtimeBox.classList.remove("hide");
-	} else {
 		overtimeBox.classList.add("hide");
-	}
+}
+
+function showOvertime() {
+	let overtimeBox = document.querySelector("#overtimeBox");
+		overtimeBox.classList.remove("hide");
 }
 
 nodecg.listenFor('overtimeBoxValue', (data) => {

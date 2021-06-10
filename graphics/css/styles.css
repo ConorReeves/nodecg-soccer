@@ -2,7 +2,7 @@ body{
 	font-family: 'Assistant', sans-serif;
 	background: grey!important;
 	height: 100%;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 .fontBoldXXXLarge{
 	font-weight: 500;
@@ -59,12 +59,13 @@ body{
 }
 #timerDiv {
 	position: absolute;
-	z-index: 1;
+	z-index: 99;
 	font-size: xxx-large;
 }
 #timerBox {
 	text-align: center;
-	margin: 69px 0 0 65px;
+	top: 70px;
+	left: 65px;
 	width: 140px;
 	height: 64px;
 	background: rgba(255,255,255,0.7);
@@ -75,7 +76,8 @@ body{
 }
 #overtimeBox {
 	text-align: center;
-	margin: 10px 0 0 65px;
+	top: 140px;
+	left: 65px;
 	width: 140px;
 	height: 65px;
 	background: rgba(0,0,0,0.7);
@@ -232,7 +234,15 @@ body{
 	bottom: -10px;
 	right: 312px;
 }
-
+#substitutionTeamIdentifierImg {
+	position:absolute;
+	right:600px;
+	top: 865px;
+	max-width:200px;
+	max-height:200px;
+	width: auto;
+	height: auto;
+}
 
 /* Full Start Ident */
 
@@ -257,7 +267,7 @@ body{
 	max-height:350px;
 	width: auto;
 	height: auto;
-	top:225px;
+	top:280px;
 	z-index: 11;
 }
 #crestTeam1FullIdent {
@@ -325,7 +335,7 @@ body{
 	max-height:350px;
 	width: auto;
 	height: auto;
-	top:225px;
+	top:280px;
 	z-index: 11;
 }
 #crestTeam1HalftimeIdent {
@@ -395,15 +405,15 @@ body{
 }
 #lineupLocation {
 	position: absolute;
-	top: 945px;
+	top: 600px;
 	font-size: 44pt!important;
 }
 #lineupImg {
-	max-width:1800px;
-	max-height:1148px;
+	max-width: 1700px;
+	max-height: 850px;
 	width: auto;
 	height: auto;
-	position: center!important;
+	position: absolute!important;
 	z-index: -1;
 }
 

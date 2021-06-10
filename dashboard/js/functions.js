@@ -23,6 +23,11 @@ function sendHideScoreBoard() {
 	nodecg.log.info('Hide Scoreboard Message sent!');
 }
 
+function sendShowScoreBoard() {
+	nodecg.sendMessage('showScoreBug');
+	nodecg.log.info('Show Scoreboard Message sent!');
+}
+
 // Receiving Messages
 
 nodecg.listenFor('startReceived', () => {
