@@ -18,3 +18,12 @@ function showHalftimeIdent() {
 	nodecg.log('showHalftimeIdent sent!')
 }
 
+function hideHalftimeLowerThird() {
+	nodecg.sendMessage('hideHalftimeLowerThird')
+	nodecg.log('hideHalftimeLowerThird sent!')
+}
+
+function showHalftimeLowerThird() {
+	nodecg.sendMessage('showHalftimeLowerThird')
+	nodecg.log('showHalftimeLowerThird sent!')
+}

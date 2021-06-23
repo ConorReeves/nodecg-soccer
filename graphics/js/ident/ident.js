@@ -39,6 +39,26 @@ nodecg.listenFor('showHalftimeIdent', () => {
 	showHalftimeIdent()
 });
 
+// Halftime Lower-Third
+
+function hideHalftimeLowerThird() {
+	document.querySelector("#halftimeLowerThird").classList.add("hide");
+}
+
+function showHalftimeLowerThird() {
+	document.querySelector("#halftimeLowerThird").classList.remove("hide");
+}
+
+nodecg.listenFor('hideHalftimeLowerThird', () => {
+	nodecg.log.info("Hide Halftime LowerThird Message Received");
+	hideHalftimeLowerThird()
+});
+
+nodecg.listenFor('showHalftimeLowerThird', () => {
+	nodecg.log.info("Show Halftime LowerThird Message Received");
+	showHalftimeLowerThird()
+});
+
 // Halftime Full Ident Text
 
 // const team1PointsRep = nodecg.Replicant('team1Points'); // -- Already Declared Elsewhere on Page

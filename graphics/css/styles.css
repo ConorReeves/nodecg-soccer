@@ -542,3 +542,21 @@ body{
 #T2Subs {
 	margin-left: 120px;
 }
+
+/* Half-Time Lower Third */
+
+#halftimeLowerThird {
+	position:absolute;
+	margin-top: 400px;
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+#halftimeLowerThird.hide {
+	opacity:0;
+}
+
+#halftimeLowerThirdImg {
+	max-width: 1280px;
+	max-height: 1000px;
+}
