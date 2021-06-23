@@ -64,7 +64,6 @@ body{
 }
 #timerBox {
 	text-align: center;
-	top: 70px;
 	left: 65px;
 	width: 140px;
 	height: 64px;
@@ -76,7 +75,6 @@ body{
 }
 #overtimeBox {
 	text-align: center;
-	top: 140px;
 	left: 65px;
 	width: 140px;
 	height: 65px;
@@ -101,7 +99,7 @@ body{
 	left: 255px;
 }
 #crestTeam2 {
-	width: 60px;
+	width: 65px;
 	height: 58px;
 	z-index: 3;
 	position: absolute;
@@ -111,12 +109,12 @@ body{
 #nameTeam1 {
 	position: absolute;
 	top:25px;
-	left: 323px;
+	left: 328px;
 }
 #nameTeam2 {
 	position: absolute;
 	top:25px;
-	left: 605px;
+	left: 595px;
 }
 #teamPoints1 {
 	position: absolute;
@@ -137,10 +135,10 @@ body{
 /* Ticker */
 
 #tickerBar {
-	width: 1910px;
+	width: 1890px;
 	height: 85px;
 	position: absolute;
-	left:5px;
+	left:15px;
 	top:950px;
 }
 #ticker {
@@ -287,7 +285,7 @@ body{
 	height: auto;
 	z-index:13;
 	position:absolute;
-	top: 340px;
+	top: 360px;
 	left: 1175px;
 }
 #nameTeam1FullIdent {
@@ -297,8 +295,8 @@ body{
 }
 #nameTeam2FullIdent {
 	position: absolute;
-	top:252px;
-	right: 345px;
+	top:250px;
+	left: 1170px;
 }
 #VSFullIdent {
 	position:absolute;
@@ -355,7 +353,7 @@ body{
 	height: auto;
 	z-index:13;
 	position:absolute;
-	top: 340px;
+	top: 360px;
 	left: 1175px;
 }
 #nameTeam1HalftimeIdent {
@@ -365,8 +363,8 @@ body{
 }
 #nameTeam2HalftimeIdent {
 	position: absolute;
-	top:252px;
-	right: 345px;
+	top:250px;
+	left: 1170px;
 }
 #halftimeTextIdent {
 	position:absolute;
@@ -405,12 +403,12 @@ body{
 }
 #lineupLocation {
 	position: absolute;
-	top: 600px;
+	top: 1000px;
 	font-size: 44pt!important;
 }
 #lineupImg {
-	max-width: 1700px;
-	max-height: 850px;
+	max-width: 1800px;
+	max-height: 900px;
 	width: auto;
 	height: auto;
 	position: absolute!important;
