@@ -15,3 +15,21 @@ nodecg.listenFor('showLOI', () => {
 	nodecg.log.info('Show LOI Message received!');
 	showLOI();
 });
+
+function hideSRFCTV() {
+	document.getElementById("srfc").classList.add("hide");
+}
+
+function showSRFCTV() {
+	document.getElementById("srfc").classList.remove("hide");
+}
+
+nodecg.listenFor('hideSRFC', () => {
+	nodecg.log.info('Hide LOI Message received!');
+	hideSRFCTV();
+});
+
+nodecg.listenFor('showSRFC', () => {
+	nodecg.log.info('Show LOI Message received!');
+	showSRFCTV();
+});

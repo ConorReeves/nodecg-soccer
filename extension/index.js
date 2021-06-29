@@ -26,7 +26,7 @@ module.exports = function (nodecg) {
 	team2Chars.on('change', (newValue, oldValue) => {
 		console.log(`team2Chars changed from ${oldValue} to ${newValue}`);
 	});
-	team2Chars.value = "DRO";
+	team2Chars.value = "DUN";
 
 	timerMinutes.value = 0;
 

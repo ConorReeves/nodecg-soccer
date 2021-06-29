@@ -28,6 +28,16 @@ function showLOI() {
 	nodecg.log.info('showLOI Message sent!');
 }
 
+function hideSRFC() {
+	nodecg.sendMessage('hideSRFC');
+	nodecg.log.info('hideSRFC Message sent!');
+}
+
+function showSRFC() {
+	nodecg.sendMessage('showSRFC');
+	nodecg.log.info('showSRFC Message sent!');
+}
+
 function restorePointsFromRep() {
 	nodecg.sendMessage('restorePointsFromRep');
 	nodecg.log.info('restorePointsFromRep Message sent!');
