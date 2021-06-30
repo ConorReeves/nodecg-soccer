@@ -39,24 +39,24 @@ nodecg.listenFor('showHalftimeIdent', () => {
 	showHalftimeIdent()
 });
 
-// Halftime Lower-Third
+// Ident Lower-Third
 
-function hideHalftimeLowerThird() {
-	document.querySelector("#halftimeLowerThird").classList.add("hide");
+function hideIdentLowerThird() {
+	document.querySelector("#identLowerThird").classList.add("hide");
 }
 
-function showHalftimeLowerThird() {
-	document.querySelector("#halftimeLowerThird").classList.remove("hide");
+function showIdentLowerThird() {
+	document.querySelector("#identLowerThird").classList.remove("hide");
 }
 
-nodecg.listenFor('hideHalftimeLowerThird', () => {
-	nodecg.log.info("Hide Halftime LowerThird Message Received");
-	hideHalftimeLowerThird()
+nodecg.listenFor('hideIdentLowerThird', () => {
+	nodecg.log.info("Hide Ident LowerThird Message Received");
+	hideIdentLowerThird()
 });
 
-nodecg.listenFor('showHalftimeLowerThird', () => {
-	nodecg.log.info("Show Halftime LowerThird Message Received");
-	showHalftimeLowerThird()
+nodecg.listenFor('showIdentLowerThird', () => {
+	nodecg.log.info("Show Ident LowerThird Message Received");
+	showIdentLowerThird()
 });
 
 // Halftime Full Ident Text

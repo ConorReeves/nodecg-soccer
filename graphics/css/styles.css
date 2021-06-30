@@ -296,24 +296,22 @@ body{
 	position: absolute;
 }
 #crestTeam2FullIdent {
-	max-width:512px;
-	max-height:512px;
-	width: auto;
-	height: auto;
+	width: 480px;
+	height: 480px;
 	z-index:13;
 	position:absolute;
-	top: 360px;
+	top: 350px;
 	left: 1175px;
 }
 #nameTeam1FullIdent {
 	position: absolute;
-	top:252px;
+	top:262px;
 	left: 275px;
 }
 #nameTeam2FullIdent {
 	position: absolute;
-	top:250px;
-	left: 1170px;
+	top:262px;
+	left: 1280px;
 }
 #VSFullIdent {
 	position:absolute;
@@ -364,24 +362,22 @@ body{
 	position:absolute;
 }
 #crestTeam2HalftimeIdent {
-	max-width:512px;
-	max-height:512px;
-	width: auto;
-	height: auto;
+	width: 480px;
+	height: 480px;
 	z-index:13;
 	position:absolute;
-	top: 360px;
+	top: 350px;
 	left: 1175px;
 }
 #nameTeam1HalftimeIdent {
 	position: absolute;
-	top:252px;
+	top:262px;
 	left: 275px;
 }
 #nameTeam2HalftimeIdent {
 	position: absolute;
-	top:250px;
-	left: 1170px;
+	top:262px;
+	left: 1280px;
 }
 #halftimeTextIdent {
 	position:absolute;
@@ -413,7 +409,6 @@ body{
 #lineupDiv {
 	opacity: 1;
 	transition: opacity 1s;
-
 }
 #lineupDiv.hide {
 	opacity: 0;
@@ -432,15 +427,6 @@ body{
 	z-index: -1;
 }
 
-#sseLogoLineup {
-	position: absolute;
-	max-width:350px;
-	max-height:350px;
-	width: auto;
-	height: auto;
-	top:206px;
-	z-index: 52;
-}
 #crestTeam1Lineup {
 	max-width:314px;
 	max-height:314px;
@@ -451,16 +437,7 @@ body{
 	top: 95px;
 	left: 275px;
 }
-#crestTeam2Lineup {
-	max-width:314px;
-	max-height:314px;
-	width: auto;
-	height: auto;
-	z-index:55;
-	position:absolute;
-	top: 70px;
-	left: 1310px;
-}
+
 #namesTeam1Lineup {
 	background: transparent;
 	height: 580px;
@@ -471,109 +448,77 @@ body{
 	color: white;
 	font-size: 24pt;
 }
-#namesTeam2Lineup {
-	background: transparent;
-	position: relative;
-	height: 580px;
-	width: 875px;
-	margin-left: 950px;
-	color: white;
-	bottom: 580px;
-	font-size: 24pt;
-	z-index: 51;
-}
 
 /* T1 Names */
 
-#T1StartingXIDiv {
-	font-family: 'Assistant', sans-serif;
-	height: 544px;
-	width: 380px;
-	background-color:rgba(0,0,0,0.4);
-	margin-left: 480px;
-	border: 3px solid limegreen;
-	border-radius: 5px;
-	padding-top: 1em;
-}
 #T1StartingXI {
-	margin-left: 120px;
+	margin-left: 190px;
 }
-[id*="numt1"] {
-	margin-left: 25px;
-	margin-bottom:50px;
+numt1p1 {
+	margin-left: 250px;
+	margin-bottom:60px;
 }
-
-/* T1 Subs */
-
-#T1SubsDiv {
-	font-family: 'Assistant', sans-serif;
-	height: 420px;
-	width: 380px;
-	background-color:rgba(0,0,0,0.4);
-	margin-left: 95px;
-	border: 3px solid limegreen;
-	border-radius: 5px;
-	padding-top: 1em;
-	top: 380px;
-	position: absolute;
-}
-#T1Subs {
-	margin-left: 120px;
+t1p1 {
+	margin-left: 250px;
+	margin-bottom:60px;
 }
 
 /* T2 Names */
 
-#T2StartingXIDiv {
-	font-family: 'Assistant', sans-serif;
-	height: 544px;
-	width: 380px;
-	background-color:rgba(0,0,0,0.4);
-	margin-left: 15px;
-	border: 3px solid cornflowerblue;
-	border-radius: 5px;
-	padding-top: 1em;
-}
 #T2StartingXI {
 	margin-left: 120px;
 }
-[id*="numt2"] {
-	margin-left: 25px;
 
-	margin-bottom:50px;
-}
+/* Ident Lower Third */
 
-/* T2 Subs */
-
-#T2SubsDiv {
-	font-family: 'Assistant', sans-serif;
-	height: 420px;
-	width: 380px;
-	background-color:rgba(0,0,0,0.4);
-	margin-left: 400px;
-	border: 3px solid cornflowerblue;
-	border-radius: 5px;
-	padding-top: 1em;
-	top: 58px;
-	position: absolute;
-}
-#T2Subs {
-	margin-left: 120px;
-}
-
-/* Half-Time Lower Third */
-
-#halftimeLowerThird {
-	position:absolute;
-	margin-top: 400px;
+#identLowerThird {
+	position:fixed;
+	margin-top: 375px;
 	opacity: 1;
 	transition: opacity 1s;
 }
-
-#halftimeLowerThird.hide {
+#identLowerThird.hide {
 	opacity:0;
 }
-
-#halftimeLowerThirdImg {
+#identLowerThirdV {
+	position: fixed;
+	margin-left: 620px;
+	top: 185px;
+	font-weight: 500;
+	font-size: 60pt;
+}
+#identLowerThirdStadium {
+	position: absolute;
+	margin-left: 464px;
+	top: 155px;
+	font-weight: 300;
+	font-size: 32pt;
+}
+#identLowerThirdImg {
 	max-width: 1280px;
 	max-height: 1000px;
+}
+#identLowerThirdTeam1Name{
+	position:fixed;
+	bottom: 30px;
+	left: 173px;
+}
+#identLowerThirdTeam2Name{
+	position:fixed;
+	bottom: 30px;
+	left: 815px;
+}
+#identLowerThirdTeam1Crest {
+	position:fixed;
+	width: 105px;
+	height: 98px;
+	bottom: 9px;
+	left: 52px;
+}
+#identLowerThirdTeam2Crest {
+	position:fixed;
+	width: 112px;
+	height: 108px;
+	bottom: 9px;
+	left: 1145px;
 }

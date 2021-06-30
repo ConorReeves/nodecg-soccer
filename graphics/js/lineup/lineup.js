@@ -1,11 +1,30 @@
 function hideAllLineup() {
-	var lineupDivEl = document.getElementById("lineupDiv");
+	var lineupDivEl = document.getElementById("lineupDivT1");
 	lineupDivEl.classList.add("hide");
-
 }
 
 function showAllLineup() {
-	var lineupDivEl = document.getElementById("lineupDiv");
+	var lineupDivEl = document.getElementById("lineupDivT1");
+	lineupDivEl.classList.remove("hide");
+}
+
+function hideAllLineupT2() {
+	var lineupDivEl = document.getElementById("lineupDivT2");
+	lineupDivEl.classList.add("hide");
+}
+
+function showAllLineupT2() {
+	var lineupDivEl = document.getElementById("lineupDivT2");
+	lineupDivEl.classList.remove("hide");
+}
+
+function hideAllLineupSUB() {
+	var lineupDivEl = document.getElementById("lineupDivSUB");
+	lineupDivEl.classList.add("hide");
+}
+
+function showAllLineupSUB() {
+	var lineupDivEl = document.getElementById("lineupDivSUB");
 	lineupDivEl.classList.remove("hide");
 }
 

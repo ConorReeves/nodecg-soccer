@@ -25,11 +25,11 @@ function showSRFCTV() {
 }
 
 nodecg.listenFor('hideSRFC', () => {
-	nodecg.log.info('Hide LOI Message received!');
+	nodecg.log.info('Hide SRFC Message received!');
 	hideSRFCTV();
 });
 
 nodecg.listenFor('showSRFC', () => {
-	nodecg.log.info('Show LOI Message received!');
+	nodecg.log.info('Show SRFC Message received!');
 	showSRFCTV();
 });
