@@ -15,6 +15,7 @@
 	<script type="text/javascript" src='js/loitv/loitv.js'></script>
 	<script type="text/javascript" src='js/scorebug/scorebug.js'></script>
 	<script type="text/javascript" src='js/substitution/substitution.js'></script>
+	<script defer type="text/javascript" src='js/scorelowerthirds.js'></script>
 </head>
 <body>
 
@@ -84,7 +85,7 @@
 </div>
 
 <div id="lineupDivT1" class="">
-	<img id="lineupImg" class="center" src="assets/img/lowerthirds/LOI-Team-Sheet-Home.png">
+	<img id="lineupImg" class="center" src="assets/img/LOI-Team-Sheet-Home.png">
 	<span id="lineupLocation" class="center fontBoldXXXLarge white">TALLAGHT STADIUM &nbsp&nbsp KICKOFF 8PM</span>
 	<img id="crestTeam1Lineup" src="assets/img/shamrockrovers.png">
 	<div id="namesTeam1Lineup">
@@ -127,10 +128,8 @@
 		</div>
 	</div>
 </div>
-
 <div hidden id="lineupDivT2" class="">
 </div>
-
 <div hidden id="lineupDivSUB" class="">
 </div>
 
@@ -197,8 +196,23 @@
 	<span id="identLowerThirdNoSSEStadium" class="">TALLAGHT STADIUM</span>
 </div>
 
+<div id="scoreCenterLowerThird" class="center">
+	<img src="assets/img/lowerthirds/LOI-Lwr-3rd-Score-No-Top-Bar.png" id="scoreCenterLowerThirdImg">
+	<div id="scoreCenterLowerThirdTeamNames">
+		<span id="scoreCenterLowerThirdTeam1Name" class="fontBoldXXXLarge">SHAMROCK ROVERS</span>
+		<span id="scoreCenterLowerThirdTeam2Name" class="fontBoldXXXLarge">DUNDALK</span>
+	</div>
+	<div id="scoreCenterLowerThirdTeamCrests">
+		<img id="scoreCenterLowerThirdTeam1Crest" src="assets/img/shamrockrovers.png">
+		<img id="scoreCenterLowerThirdTeam2Crest" src="assets/img/dundalk_fc.png">
+	</div>
+	<span id="teamPoints1ScoreCenterLowerThird" class="white fontBoldXXXLarge center">0</span>
+	<span id="seperatorScoreCenterLowerThird" class="white fontBoldXXXLarge center">-</span>
+	<span id="teamPoints2ScoreCenterLowerThird" class="white fontBoldXXXLarge center">0</span>
+</div>
+
 <script type="text/javascript" src='js/score/scoresetting.js'></script>
 <script type="text/javascript" src='js/ident/ident.js'></script>
-<script>window.onload = hideOvertime(), hideAllLineup(), hideTickerBugBox(), subBoxToggleGFX(), hideFullIdent(), hideHalftimeIdent(), hideSRFCTV(), hideIdentLowerThird()</script>
+<script>window.onload = hideOvertime(), hideIdentLowerThirdNoSSE(), hideAllLineup(), hideTickerBugBox(), subBoxToggleGFX(), hideFullIdent(), hideHalftimeIdent(), hideSRFCTV(), hideIdentLowerThird()</script>
 </body>
 </html>

@@ -527,7 +527,7 @@ t1p1 {
 
 #identLowerThirdNoSSE {
 	position:fixed;
-	margin-top: 375px;
+	margin-top: 450px;
 	opacity: 1;
 	transition: opacity 1s;
 }
@@ -577,4 +577,64 @@ t1p1 {
 	left: 1140px;
 }
 
+/* scoreCenterLowerThird */
+
+#scoreCenterLowerThird {
+	position:fixed;
+	margin-top: 450px;
+
+	opacity: 1;
+	transition: opacity 1s;
+}
+#scoreCenterLowerThird.hide {
+	opacity:0;
+}
+#scoreCenterLowerThirdImg {
+	max-width: 1280px;
+	max-height: 1000px;
+}
+#scoreCenterLowerThirdTeam1Name{
+	position:fixed;
+	bottom: 30px;
+	left: 172px;
+}
+#scoreCenterLowerThirdTeam2Name{
+	position:fixed;
+	bottom: 30px;
+	left: 825px;
+}
+#scoreCenterLowerThirdTeam1Crest {
+	position:fixed;
+	width: 105px;
+	height: 98px;
+	bottom: 9px;
+	left: 52px;
+}
+#scoreCenterLowerThirdTeam2Crest {
+	position:fixed;
+	width: 112px;
+	height: 108px;
+	bottom: 7px;
+	left: 1140px;
+}
+#teamPoints1ScoreCenterLowerThird {
+	position:absolute;
+	font-weight: 300;
+	font-size: 54pt;
+	padding-right:85px;
+	padding-bottom: 25px;
+}
+#seperatorScoreCenterLowerThird {
+	position:absolute;
+	font-weight: 300;
+	font-size: 54pt;
+	padding-bottom: 25px;
+}
+#teamPoints2ScoreCenterLowerThird {
+	position:absolute;
+	font-weight: 300;
+	font-size: 54pt;
+	padding-left:85px;
+	padding-bottom: 25px;
+}
 
