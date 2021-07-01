@@ -59,6 +59,26 @@ nodecg.listenFor('showIdentLowerThird', () => {
 	showIdentLowerThird()
 });
 
+// Ident Lower-Third NoSSE
+
+function hideIdentLowerThirdNoSSE() {
+	document.querySelector("#identLowerThirdNoSSE").classList.add("hide");
+}
+
+function showIdentLowerThirdNoSSE() {
+	document.querySelector("#identLowerThirdNoSSE").classList.remove("hide");
+}
+
+nodecg.listenFor('hideIdentLowerThirdNoSSE', () => {
+	nodecg.log.info("Hide Ident LowerThird NoSSE Message Received");
+	hideIdentLowerThirdNoSSE()
+});
+
+nodecg.listenFor('showIdentLowerThirdNoSSE', () => {
+	nodecg.log.info("Show Ident LowerThird NoSSE Message Received");
+	showIdentLowerThirdNoSSE()
+});
+
 // Halftime Full Ident Text
 
 // const team1PointsRep = nodecg.Replicant('team1Points'); // -- Already Declared Elsewhere on Page

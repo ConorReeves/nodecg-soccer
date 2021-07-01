@@ -406,11 +406,11 @@ body{
 
 /* Lineup */
 
-#lineupDiv {
+#lineupDivT1 {
 	opacity: 1;
 	transition: opacity 1s;
 }
-#lineupDiv.hide {
+#lineupDivT1.hide {
 	opacity: 0;
 }
 #lineupLocation {
@@ -522,3 +522,59 @@ t1p1 {
 	bottom: 9px;
 	left: 1145px;
 }
+
+/* Ident Lower Third NoSSE */
+
+#identLowerThirdNoSSE {
+	position:fixed;
+	margin-top: 375px;
+	opacity: 1;
+	transition: opacity 1s;
+}
+#identLowerThirdNoSSE.hide {
+	opacity:0;
+}
+#identLowerThirdNoSSEV {
+	position: fixed;
+	margin-left: 634px;
+	top: 30px;
+	font-weight: 500;
+	font-size: 60pt;
+}
+#identLowerThirdNoSSEStadium {
+	position: absolute;
+	margin-left: 474px;
+	top: 1px;
+	font-weight: 300;
+	font-size: 32pt;
+}
+#identLowerThirdNoSSEImg {
+	max-width: 1280px;
+	max-height: 1000px;
+}
+#identLowerThirdNoSSETeam1Name{
+	position:fixed;
+	bottom: 30px;
+	left: 183px;
+}
+#identLowerThirdNoSSETeam2Name{
+	position:fixed;
+	bottom: 30px;
+	left: 825px;
+}
+#identLowerThirdNoSSETeam1Crest {
+	position:fixed;
+	width: 105px;
+	height: 98px;
+	bottom: 9px;
+	left: 52px;
+}
+#identLowerThirdNoSSETeam2Crest {
+	position:fixed;
+	width: 112px;
+	height: 108px;
+	bottom: 7px;
+	left: 1140px;
+}
+
+

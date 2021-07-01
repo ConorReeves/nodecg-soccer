@@ -27,3 +27,13 @@ function showIdentLowerThird() {
 	nodecg.sendMessage('showIdentLowerThird')
 	nodecg.log('showIdentLowerThird sent!')
 }
+
+function hideIdentLowerThirdNoSSE() {
+	nodecg.sendMessage('hideIdentLowerThirdNoSSE')
+	nodecg.log('hideIdentLowerThirdNoSSE sent!')
+}
+
+function showIdentLowerThirdNoSSE() {
+	nodecg.sendMessage('showIdentLowerThirdNoSSE')
+	nodecg.log('showIdentLowerThirdNoSSE sent!')
+}
