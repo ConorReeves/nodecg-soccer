@@ -489,7 +489,7 @@ t1p1 {
 }
 #identLowerThirdStadium {
 	position: absolute;
-	margin-left: 464px;
+	margin-left: 474px;
 	top: 155px;
 	font-weight: 300;
 	font-size: 32pt;
@@ -501,12 +501,16 @@ t1p1 {
 #identLowerThirdTeam1Name{
 	position:fixed;
 	bottom: 30px;
-	left: 173px;
+	left: 206px;
+	font-weight: 400;
+	font-size: xxx-large;
 }
 #identLowerThirdTeam2Name{
 	position:fixed;
 	bottom: 30px;
-	left: 815px;
+	left: 840px;
+	font-weight: 400;
+	font-size: xxx-large;
 }
 #identLowerThirdTeam1Crest {
 	position:fixed;
@@ -555,12 +559,14 @@ t1p1 {
 #identLowerThirdNoSSETeam1Name{
 	position:fixed;
 	bottom: 30px;
-	left: 183px;
+	left: 206px;
+	font-weight: 400;
+	font-size: xxx-large;
 }
 #identLowerThirdNoSSETeam2Name{
 	position:fixed;
 	bottom: 30px;
-	left: 825px;
+	left: 840px;
 }
 #identLowerThirdNoSSETeam1Crest {
 	position:fixed;
@@ -596,12 +602,16 @@ t1p1 {
 #scoreCenterLowerThirdTeam1Name{
 	position:fixed;
 	bottom: 30px;
-	left: 172px;
+	left: 206px;
+	font-weight: 400;
+	font-size: xxx-large;
 }
 #scoreCenterLowerThirdTeam2Name{
 	position:fixed;
 	bottom: 30px;
-	left: 825px;
+	left: 840px;
+	font-weight: 400;
+	font-size: xxx-large;
 }
 #scoreCenterLowerThirdTeam1Crest {
 	position:fixed;
