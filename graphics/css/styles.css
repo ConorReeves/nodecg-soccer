@@ -649,7 +649,7 @@ t1p1 {
 }
 
 /* HTFT Lower Left Third */
-
+/*
 #scoreHTFTLeftLowerThird {
 	opacity: 1;
 	transition: opacity 1s;
@@ -667,11 +667,12 @@ t1p1 {
 }
 #scoreHTFTLeftLowerThirdTeamName1 {
 	padding-left: 214px;
-	position: fixed;
+	position: absolute;
 	padding-bottom:50px;
 }
 #scoreHTFTLeftLowerThirdTeamName2 {
 	padding-left: 1280px;
-	position: fixed;
+	position: absolute;
 	top: 5px;
 }
+*/
