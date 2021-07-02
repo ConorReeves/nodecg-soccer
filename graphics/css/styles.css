@@ -648,3 +648,30 @@ t1p1 {
 	padding-bottom: 25px;
 }
 
+/* HTFT Lower Left Third */
+
+#scoreHTFTLeftLowerThird {
+	opacity: 1;
+	transition: opacity 1s;
+	position: absolute;
+	left: 1px;
+}
+#scoreHTFTLeftLowerThird.hide {
+	opacity: 0;
+}
+#scoreHTFTLeftLowerThirdImg {
+	max-width: 720px;
+	max-height: 720px;
+	width: auto;
+	height: auto;
+}
+#scoreHTFTLeftLowerThirdTeamName1 {
+	padding-left: 214px;
+	position: fixed;
+	padding-bottom:50px;
+}
+#scoreHTFTLeftLowerThirdTeamName2 {
+	padding-left: 1280px;
+	position: fixed;
+	top: 5px;
+}
